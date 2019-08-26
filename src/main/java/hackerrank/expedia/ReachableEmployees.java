@@ -54,7 +54,7 @@ public class ReachableEmployees {
       bfs_res[i][1] = 0;
     }
     bfs_res[host][1] = 0;
-    boolean visited[] = new boolean[employeeNodes + 1];
+    boolean[] visited = new boolean[employeeNodes + 1];
     bfs(host, visited, graph, bfs_res);
 
     Arrays.sort(bfs_res, (entry1, entry2) -> {
@@ -73,7 +73,7 @@ public class ReachableEmployees {
     });
 
     for (int i = 0; i < employeeNodes + 1; i++) {
-      if (i == 0 || i == host)
+      if (i == 0 || bfs_res[i][0] == host)
         continue;
       res.add(bfs_res[i][0]);
 
@@ -83,7 +83,7 @@ public class ReachableEmployees {
 
   public static void main(String[] args) {
     int employeeNodes = 2;
-    List<Integer> employeesFrom = Arrays.asList(2,1);
+    List<Integer> employeesFrom = Arrays.asList(2, 1);
     List<Integer> employeesTo = Arrays.asList(1, 2);
     int host = 2;
     System.out.println(order(employeeNodes, employeesFrom, employeesTo, host));
