@@ -1,4 +1,4 @@
-package codility;
+package codility.painless;
 
 /**
  * Created by nikoo28 on 2019-08-25 14:21

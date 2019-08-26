@@ -1,10 +1,7 @@
-package codility;
+package codility.ambitious;
 
 import java.util.*;
 import java.util.function.BiFunction;
-import java.util.function.Function;
-import java.util.stream.Collectors;
-import java.util.stream.IntStream;
 
 /**
  * Created by nikoo28 on 2019-08-25 13:39
