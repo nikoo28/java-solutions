@@ -1,20 +1,23 @@
-package leetcode.easy;
+package codility.painless;
 
 /**
- * Created by nikoo28 on 2019-07-21 14:59
+ * Created by nikoo28 on 2019-08-25 20:03
  */
 
-public class RotateArray {
+public class CyclicRotation {
 
-  public void rotate(int[] nums, int k) {
+  public int[] solution(int[] nums, int k) {
+    // write your code in Java SE 8
 
     if (nums.length == 0)
-      return;
+      return nums;
 
     k %= nums.length;
     reverse(nums, 0, nums.length - 1);
     reverse(nums, 0, k - 1);
     reverse(nums, k, nums.length - 1);
+
+    return nums;
   }
 
   public void reverse(int[] nums, int start, int end) {
