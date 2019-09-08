@@ -1,6 +1,7 @@
 package leetcode;
 
 import java.util.HashMap;
+import java.util.Map;
 
 /**
  * Created by nikoo28 on 7/16/19 2:15 AM
@@ -23,25 +24,54 @@ class Node {
 
 public class CopyListWithRandomPointer {
 
-  HashMap<Node, Node> visitedHash = new HashMap<>();
+  Map<Node, Node> oldNodeNewNodeMap = new HashMap<>();
 
   public Node copyRandomList(Node head) {
 
-    if (head == null) {
+    if (head == null)
       return null;
+
+    Node headCopy = head;
+    while (head != null) {
+      Node temp = new Node();
+      oldNodeNewNodeMap.put(head, temp);
+
+      temp.val = head.val;
+      head = head.next;
     }
 
-    if (this.visitedHash.containsKey(head)) {
-      return this.visitedHash.get(head);
+    head = headCopy;
+    Node deepCopy = oldNodeNewNodeMap.get(head);
+    Node deepCopyHead = deepCopy;
+    while (head != null) {
+      Node next = head.next;
+      Node random = head.random;
+
+      deepCopy.next = oldNodeNewNodeMap.get(next);
+      deepCopy.random = oldNodeNewNodeMap.get(random);
+
+      head = head.next;
+      deepCopy = deepCopy.next;
     }
 
-    Node node = new Node(head.val, null, null);
+    return deepCopyHead;
+  }
 
-    this.visitedHash.put(head, node);
+  public static void main(String[] args) {
+    CopyListWithRandomPointer copyListWithRandomPointer = new CopyListWithRandomPointer();
 
-    node.next = this.copyRandomList(head.next);
-    node.random = this.copyRandomList(head.random);
+    Node id1 = new Node();
+    Node id2 = new Node();
 
-    return node;
+    id1.val = 1;
+    id2.val = 2;
+
+    id1.next = id2;
+    id1.random = id2;
+
+    id2.next = null;
+    id2.random = id2;
+
+    System.out.println(copyListWithRandomPointer.copyRandomList(id1));
   }
 }
