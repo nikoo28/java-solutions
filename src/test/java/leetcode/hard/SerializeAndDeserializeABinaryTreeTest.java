@@ -1,8 +1,9 @@
 package leetcode.hard;
 
 import leetcode.TreeNode;
-import org.junit.Assert;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
+
+import static org.junit.jupiter.api.Assertions.*;
 
 /**
  * Created by nikoo28 on 2019-09-14 18:59
@@ -29,15 +30,15 @@ public class SerializeAndDeserializeABinaryTreeTest {
     System.out.println(data);
 
     TreeNode deserialized = serializeAndDeserializeABinaryTree.deserialize(data);
-    Assert.assertEquals(1, deserialized.val);
+    assertEquals(1, deserialized.val);
 
-    Assert.assertEquals(1, deserialized.left.val);
-    Assert.assertEquals(4, deserialized.left.left.val);
-    Assert.assertEquals(7, deserialized.left.left.right.val);
+    assertEquals(1, deserialized.left.val);
+    assertEquals(4, deserialized.left.left.val);
+    assertEquals(7, deserialized.left.left.right.val);
 
-    Assert.assertEquals(3, deserialized.right.val);
-    Assert.assertEquals(5, deserialized.right.left.val);
-    Assert.assertEquals(6, deserialized.right.right.val);
+    assertEquals(3, deserialized.right.val);
+    assertEquals(5, deserialized.right.left.val);
+    assertEquals(6, deserialized.right.right.val);
   }
 
   @Test
@@ -54,12 +55,12 @@ public class SerializeAndDeserializeABinaryTreeTest {
     System.out.println(data);
 
     TreeNode deserialized = serializeAndDeserializeABinaryTree.deserialize(data);
-    Assert.assertEquals(1, deserialized.val);
+    assertEquals(1, deserialized.val);
 
-    Assert.assertEquals(2, deserialized.left.val);
+    assertEquals(2, deserialized.left.val);
 
-    Assert.assertEquals(3, deserialized.right.val);
-    Assert.assertEquals(4, deserialized.right.left.val);
-    Assert.assertEquals(5, deserialized.right.right.val);
+    assertEquals(3, deserialized.right.val);
+    assertEquals(4, deserialized.right.left.val);
+    assertEquals(5, deserialized.right.right.val);
   }
 }
