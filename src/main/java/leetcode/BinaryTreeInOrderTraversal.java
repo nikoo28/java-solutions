@@ -12,9 +12,9 @@ public class BinaryTreeInOrderTraversal {
 
   public List<Integer> inorderTraversal(TreeNode root) {
 
-    List<Integer> list = new ArrayList<Integer>();
+    List<Integer> list = new ArrayList<>();
 
-    Stack<TreeNode> stack = new Stack<TreeNode>();
+    Stack<TreeNode> stack = new Stack<>();
     TreeNode cur = root;
 
     while (cur != null || !stack.empty()) {

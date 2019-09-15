@@ -25,7 +25,7 @@ public class SerializeAndDeserializeABinaryTree {
       return;
 
     inOrder(root.left, inOrderString);
-    inOrderString.append(root.val + ":" + root.hashCode() + ",");
+    inOrderString.append(root.val).append(":").append(root.hashCode()).append(",");
     inOrder(root.right, inOrderString);
   }
 
@@ -33,7 +33,7 @@ public class SerializeAndDeserializeABinaryTree {
     if (root == null)
       return;
 
-    preOrderString.append(root.val + ":" + root.hashCode() + ",");
+    preOrderString.append(root.val).append(":").append(root.hashCode()).append(",");
     preOrder(root.left, preOrderString);
     preOrder(root.right, preOrderString);
   }
@@ -69,11 +69,11 @@ public class SerializeAndDeserializeABinaryTree {
       }
 
       if (left) {
-        inOrderStringLeft.append(inOrderSplit + ",");
-        preOrderStringLeft.append(preOrderSplits[j++] + ",");
+        inOrderStringLeft.append(inOrderSplit).append(",");
+        preOrderStringLeft.append(preOrderSplits[j++]).append(",");
       } else {
-        inOrderStringRight.append(inOrderSplit + ",");
-        preOrderStringRight.append(preOrderSplits[j++] + ",");
+        inOrderStringRight.append(inOrderSplit).append(",");
+        preOrderStringRight.append(preOrderSplits[j++]).append(",");
       }
     }
 

@@ -13,7 +13,7 @@ public class LengthOfLongestPalindrome {
     if (s == null || s.length() == 0)
       return 0;
 
-    HashSet<Character> hs = new HashSet<Character>();
+    HashSet<Character> hs = new HashSet<>();
     int count = 0;
 
     for (int i = 0; i < s.length(); i++) {

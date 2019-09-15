@@ -12,11 +12,11 @@ public class TopKFrequentWords {
 
     List<String> result = new LinkedList<>();
     Map<String, Integer> map = new HashMap<>();
-    for (int i = 0; i < words.length; i++) {
-      if (map.containsKey(words[i]))
-        map.put(words[i], map.get(words[i]) + 1);
+    for (String word : words) {
+      if (map.containsKey(word))
+        map.put(word, map.get(word) + 1);
       else
-        map.put(words[i], 1);
+        map.put(word, 1);
     }
 
     PriorityQueue<Map.Entry<String, Integer>> pq = new PriorityQueue<>(

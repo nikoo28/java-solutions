@@ -11,9 +11,9 @@ public class ReshapeTheMatrix {
 
     int[][] result = new int[r][c];
     int row = 0, col = 0;
-    for (int i = 0; i < m; i++) {
+    for (int[] num : nums) {
       for (int j = 0; j < n; j++) {
-        result[row][col] = nums[i][j];
+        result[row][col] = num[j];
         col++;
         if (col == c) {
           col = 0;

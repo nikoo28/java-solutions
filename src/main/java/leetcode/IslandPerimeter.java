@@ -13,9 +13,7 @@ public class IslandPerimeter {
     int[][] matrix = new int[rows][cols];
 
     for (int i = 1; i < rows - 1; i++) {
-      for (int j = 1; j < cols - 1; j++) {
-        matrix[i][j] = grid[i - 1][j - 1];
-      }
+      System.arraycopy(grid[i - 1], 0, matrix[i], 1, cols - 1 - 1);
     }
 
     int perimeter = 0;

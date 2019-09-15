@@ -1,8 +1,5 @@
 package leetcode;
 
-import java.util.HashSet;
-import java.util.Set;
-
 public class JudgeRouteCircle {
 
   public boolean judgeCircle(String moves) {

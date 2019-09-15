@@ -29,7 +29,7 @@ public class ASCIIDistance {
     unionSet.addAll(str1Set);
     unionSet.addAll(str2Set);
 
-    List<Character> intersectionSet = new ArrayList<>(str1Set.size() > str2Set.size() ? str1Set.size() : str2Set.size());
+    List<Character> intersectionSet = new ArrayList<>(Math.max(str1Set.size(), str2Set.size()));
     intersectionSet.addAll(str1Set);
     intersectionSet.retainAll(str2Set);
 
