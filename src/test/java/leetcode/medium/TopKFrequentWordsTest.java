@@ -18,7 +18,7 @@ public class TopKFrequentWordsTest {
   @Test
   public void testTopKFrequent1() {
 
-    String[] words = {"i", "love", "leetcode", "i", "love", "coding"};
+    String[] words = {"i", "love", "studyalgorithms", "i", "love", "coding"};
     List<String> expectedResult = new ArrayList<>();
     expectedResult.add("i");
     expectedResult.add("love");
