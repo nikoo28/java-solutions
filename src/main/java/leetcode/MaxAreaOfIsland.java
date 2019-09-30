@@ -22,9 +22,9 @@ public class MaxAreaOfIsland {
       }
     }
 
-    for (int i = 0; i < grid.length; i++) {
+    for (int[] ints : grid) {
       for (int j = 0; j < grid[0].length; j++) {
-        System.out.print(grid[i][j] + " ");
+        System.out.print(ints[j] + " ");
       }
       System.out.println();
     }

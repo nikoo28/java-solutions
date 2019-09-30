@@ -1,8 +1,5 @@
 package leetcode.hard;
 
-import java.util.Arrays;
-import java.util.stream.IntStream;
-
 /**
  * Created by nikoo28 on 2019-08-18 23:25
  */
@@ -43,21 +40,4 @@ public class MedianOfTwoSortedArrays {
 
     return 0;
   }
-
-  public static void main(String[] args) {
-    MedianOfTwoSortedArrays medianOfTwoSortedArrays = new MedianOfTwoSortedArrays();
-
-    int[] nums1 = {1,3,5,7};
-    int[] nums2 = {2,4,6,8,10};
-    System.out.println(medianOfTwoSortedArrays.findMedianSortedArrays(nums1, nums2));
-
-    nums1 = new int[]{1, 3, 8, 9, 15};
-    nums2 = new int[]{7,11,18,19,21,25};
-    System.out.println(medianOfTwoSortedArrays.findMedianSortedArrays(nums1, nums2));
-
-    nums1 = new int[]{1};
-    nums2 = new int[]{7};
-    System.out.println(medianOfTwoSortedArrays.findMedianSortedArrays(nums1, nums2));
-  }
-
 }

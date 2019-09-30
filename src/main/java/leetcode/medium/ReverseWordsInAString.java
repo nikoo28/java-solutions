@@ -12,7 +12,7 @@ public class ReverseWordsInAString {
     StringBuilder reversed = new StringBuilder();
 
     for (int i = words.length - 1; i >=0 ; i--) {
-      reversed.append(new StringBuilder(words[i].trim()));
+      reversed.append(words[i].trim());
       reversed.append(" ");
     }
 

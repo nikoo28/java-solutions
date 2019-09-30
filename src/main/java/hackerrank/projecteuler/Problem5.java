@@ -64,8 +64,8 @@ public class Problem5 {
 
         String factors = factorList.get(i);
         String[] integerFactors = factors.split(",");
-        for (int j = 0; j < integerFactors.length; j++) {
-          int num = Integer.parseInt(integerFactors[j]);
+        for (String integerFactor : integerFactors) {
+          int num = Integer.parseInt(integerFactor);
 
           number = number * num;
           if (number % i == 0)

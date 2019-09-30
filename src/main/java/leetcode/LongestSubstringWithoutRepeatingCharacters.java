@@ -21,7 +21,7 @@ public class LongestSubstringWithoutRepeatingCharacters {
 
       if (x.contains(s.charAt(i))) {
 
-        maxLen = maxLen < x.size() ? x.size() : maxLen;
+        maxLen = Math.max(maxLen, x.size());
 
         while (x.get(0) != s.charAt(i))
           x.remove(0);
@@ -31,7 +31,7 @@ public class LongestSubstringWithoutRepeatingCharacters {
       x.add(s.charAt(i));
     }
 
-    return maxLen < x.size() ? x.size() : maxLen;
+    return Math.max(maxLen, x.size());
   }
 
 }

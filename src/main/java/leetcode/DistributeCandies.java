@@ -14,10 +14,7 @@ public class DistributeCandies {
     for (int candy : candies) {
       kinds.add(candy);
     }
-    if (kinds.size() >= candies.length/2)
-      return candies.length/2;
-    else
-      return kinds.size();
+    return Math.min(kinds.size(), candies.length / 2);
   }
 
 }

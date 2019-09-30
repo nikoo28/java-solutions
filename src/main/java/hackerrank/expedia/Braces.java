@@ -1,9 +1,5 @@
 package hackerrank.expedia;
 
-import java.io.BufferedWriter;
-import java.io.FileWriter;
-import java.io.IOException;
-import java.util.Scanner;
 import java.util.Stack;
 
 /**

@@ -1,7 +1,5 @@
 package leetcode;
 
-import java.util.Arrays;
-
 /**
  * Created by nikoo28 on 12/18/17 3:25 PM
  */
@@ -55,7 +53,7 @@ public class ZombieClusters {
 
   static int findClustersDFS(int[][] M, int N) {
 
-    boolean visited[] = new boolean[N];
+    boolean[] visited = new boolean[N];
 
     int count = 0;
     for (int i = 0; i < N; ++i) {

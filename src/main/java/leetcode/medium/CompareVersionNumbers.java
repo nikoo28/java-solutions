@@ -11,7 +11,7 @@ public class CompareVersionNumbers {
     String[] v1 = version1.split("\\.");
     String[] v2 = version2.split("\\.");
 
-    int longest = v1.length > v2.length ? v1.length : v2.length;
+    int longest = Math.max(v1.length, v2.length);
 
     for (int i = 0; i < longest; i++) {
       int ver1 = i < v1.length ? Integer.parseInt(v1[i]) : 0;

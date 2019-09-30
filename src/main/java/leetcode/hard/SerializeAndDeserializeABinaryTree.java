@@ -25,7 +25,7 @@ public class SerializeAndDeserializeABinaryTree {
       return;
 
     inOrder(root.left, inOrderString);
-    inOrderString.append(root.val + ":" + root.hashCode() + ",");
+    inOrderString.append(root.val).append(":").append(root.hashCode()).append(",");
     inOrder(root.right, inOrderString);
   }
 
@@ -33,7 +33,7 @@ public class SerializeAndDeserializeABinaryTree {
     if (root == null)
       return;
 
-    preOrderString.append(root.val + ":" + root.hashCode() + ",");
+    preOrderString.append(root.val).append(":").append(root.hashCode()).append(",");
     preOrder(root.left, preOrderString);
     preOrder(root.right, preOrderString);
   }
@@ -69,11 +69,11 @@ public class SerializeAndDeserializeABinaryTree {
       }
 
       if (left) {
-        inOrderStringLeft.append(inOrderSplit + ",");
-        preOrderStringLeft.append(preOrderSplits[j++] + ",");
+        inOrderStringLeft.append(inOrderSplit).append(",");
+        preOrderStringLeft.append(preOrderSplits[j++]).append(",");
       } else {
-        inOrderStringRight.append(inOrderSplit + ",");
-        preOrderStringRight.append(preOrderSplits[j++] + ",");
+        inOrderStringRight.append(inOrderSplit).append(",");
+        preOrderStringRight.append(preOrderSplits[j++]).append(",");
       }
     }
 
@@ -92,27 +92,4 @@ public class SerializeAndDeserializeABinaryTree {
 
     return root;
   }
-
-  public static void main(String[] args) {
-
-    SerializeAndDeserializeABinaryTree serializeAndDeserializeABinaryTree = new SerializeAndDeserializeABinaryTree();
-
-    TreeNode root = new TreeNode(1);
-
-    root.left = new TreeNode(1);
-    root.left.left = new TreeNode(4);
-    root.left.left.right = new TreeNode(7);
-
-    root.right = new TreeNode(3);
-    root.right.left = new TreeNode(5);
-    root.right.right = new TreeNode(6);
-
-    String data = serializeAndDeserializeABinaryTree.serialize(root);
-    System.out.println(data);
-
-    TreeNode deserialized = serializeAndDeserializeABinaryTree.deserialize(data);
-
-    System.out.println(deserialized);
-  }
-
 }

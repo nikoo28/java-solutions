@@ -15,7 +15,7 @@ public class Problem4 {
   public static void main(String[] args) {
 
     Scanner in = new Scanner(System.in);
-    int a[] = new int[1000001];
+    int[] a = new int[1000001];
     int k = 0, count = 0;
 
     for (int i = 100; i <= 999; i++) {

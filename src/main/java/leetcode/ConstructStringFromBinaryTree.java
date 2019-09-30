@@ -16,9 +16,9 @@ public class ConstructStringFromBinaryTree {
     String left = tree2str(t.left);
     String right = tree2str(t.right);
 
-    if (left == "" && right == "") return result;
-    if (left == "") return result + "()" + "(" + right + ")";
-    if (right == "") return result + "(" + left + ")";
+    if (left.equals("") && right.equals("")) return result;
+    if (left.equals("")) return result + "()" + "(" + right + ")";
+    if (right.equals("")) return result + "(" + left + ")";
     return result + "(" + left + ")" + "(" + right + ")";
 
   }

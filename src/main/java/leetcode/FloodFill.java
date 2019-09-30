@@ -24,9 +24,9 @@ public class FloodFill {
   public static void main(String[] args) {
     int[][] grid = {{1, 1, 1}, {1, 1, 0}, {1, 0, 1}};
     int[][] ints = new FloodFill().floodFill(grid, 1, 1, 2);
-    for (int i = 0; i < ints.length; i++) {
+    for (int[] anInt : ints) {
       for (int j = 0; j < ints[0].length; j++) {
-        System.out.print(ints[i][j]);
+        System.out.print(anInt[j]);
       }
       System.out.println();
     }
