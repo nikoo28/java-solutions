@@ -27,7 +27,7 @@ public class SerializeAndDeserializeABinaryTreeTest {
     root.right.right = new TreeNode(6);
 
     String data = serializeAndDeserializeABinaryTree.serialize(root);
-    System.out.println(data);
+    // System.out.println(data);
 
     TreeNode deserialized = serializeAndDeserializeABinaryTree.deserialize(data);
     assertEquals(1, deserialized.val);
@@ -52,7 +52,7 @@ public class SerializeAndDeserializeABinaryTreeTest {
     root.right.right = new TreeNode(5);
 
     String data = serializeAndDeserializeABinaryTree.serialize(root);
-    System.out.println(data);
+    // System.out.println(data);
 
     TreeNode deserialized = serializeAndDeserializeABinaryTree.deserialize(data);
     assertEquals(1, deserialized.val);
