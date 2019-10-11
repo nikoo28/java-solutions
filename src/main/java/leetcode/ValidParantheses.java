@@ -6,7 +6,7 @@ import java.util.Stack;
  * Created by nikoo28 on 7/11/19 2:00 AM
  */
 
-public class ValidParantheses {
+class ValidParantheses {
 
   public boolean isValid(String s) {
 

@@ -4,7 +4,7 @@ package leetcode.easy;
  * Created by nikoo28 on 2019-07-21 15:22
  */
 
-public class MinCostClimbingStairs {
+class MinCostClimbingStairs {
 
   public int minCostClimbingStairs(int[] cost) {
     int f1 = 0, f2 = 0;

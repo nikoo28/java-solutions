@@ -4,7 +4,7 @@ package codility.painless;
  * Created by nikoo28 on 2019-08-25 16:31
  */
 
-public class BinaryGap {
+class BinaryGap {
 
   public int solution(int N) {
     // write your code in Java SE 8

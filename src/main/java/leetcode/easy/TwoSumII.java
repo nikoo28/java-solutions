@@ -4,7 +4,7 @@ package leetcode.easy;
  * Created by nikoo28 on 12/17/17 8:54 PM
  */
 
-public class TwoSumII {
+class TwoSumII {
 
   public int[] twoSum(int[] numbers, int target) {
 

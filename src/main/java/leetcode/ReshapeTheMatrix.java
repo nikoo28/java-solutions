@@ -3,7 +3,7 @@ package leetcode;
 /**
  * @author nikoo28 on 9/10/17
  */
-public class ReshapeTheMatrix {
+class ReshapeTheMatrix {
 
   public int[][] matrixReshape(int[][] nums, int r, int c) {
     int m = nums.length, n = nums[0].length;

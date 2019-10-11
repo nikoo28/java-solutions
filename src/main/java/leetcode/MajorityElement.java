@@ -6,9 +6,9 @@ import java.util.Arrays;
  * Created by nikoo28 on 12/17/17 3:14 PM
  */
 
-public class MajorityElement {
+class MajorityElement {
 
-  public int majorityElement(int[] nums) {
+  private int majorityElement(int[] nums) {
 
     Arrays.sort(nums);
     return nums[nums.length / 2];

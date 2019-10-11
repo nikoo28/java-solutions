@@ -7,7 +7,7 @@ import java.util.Set;
  * Created by nikoo28 on 10/11/19 12:31 AM
  */
 
-public class ContainsDuplicateII {
+class ContainsDuplicateII {
 
   public boolean containsNearbyDuplicate(int[] nums, int k) {
     Set<Integer> set = new HashSet<>();

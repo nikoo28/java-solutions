@@ -4,9 +4,9 @@ package leetcode.easy;
  * Created by nikoo28 on 2019-08-17 19:34
  */
 
-public class FindWordsThatCanBeFormedByCharacters {
+class FindWordsThatCanBeFormedByCharacters {
 
-  public int countCharacters(String[] words, String chars) {
+  private int countCharacters(String[] words, String chars) {
 
     int sumOfLengths = 0;
 

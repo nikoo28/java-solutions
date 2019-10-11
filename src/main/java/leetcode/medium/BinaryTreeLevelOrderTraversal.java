@@ -10,7 +10,7 @@ import java.util.Queue;
  * Created by nikoo28 on 12/19/17 1:01 AM
  */
 
-public class BinaryTreeLevelOrderTraversal {
+class BinaryTreeLevelOrderTraversal {
 
   public List<List<Integer>> levelOrder(TreeNode root) {
 

@@ -8,16 +8,16 @@ import static org.junit.jupiter.api.Assertions.*;
  * Created by nikoo28 on 2019-09-14 18:43
  */
 
-public class SearchInRotatedSortedArrayTest {
+class SearchInRotatedSortedArrayTest {
 
   private SearchInRotatedSortedArray searchInRotatedSortedArray;
 
-  public SearchInRotatedSortedArrayTest() {
+  SearchInRotatedSortedArrayTest() {
     searchInRotatedSortedArray = new SearchInRotatedSortedArray();
   }
 
   @Test
-  public void testSearch() {
+  void testSearch() {
     int[] nums = {8, 4, 5, 6, 7};
     assertEquals(1, searchInRotatedSortedArray.search(nums, 4));
 

@@ -4,7 +4,7 @@ package leetcode;
  * Created by nikoo28 on 12/19/17 12:43 AM
  */
 
-public class LinkedListCycleII {
+class LinkedListCycleII {
 
   public ListNode detectCycle(ListNode head) {
 

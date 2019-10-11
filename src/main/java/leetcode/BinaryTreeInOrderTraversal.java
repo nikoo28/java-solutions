@@ -8,7 +8,7 @@ import java.util.Stack;
  * Created by nikoo28 on 12/19/17 1:22 AM
  */
 
-public class BinaryTreeInOrderTraversal {
+class BinaryTreeInOrderTraversal {
 
   public List<Integer> inorderTraversal(TreeNode root) {
 

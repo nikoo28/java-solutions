@@ -6,7 +6,7 @@ import java.util.Arrays;
  * Created by nikoo28 on 10/8/19 1:24 AM
  */
 
-public class ReorderDataInLogFiles {
+class ReorderDataInLogFiles {
 
   public String[] reorderLogFiles(String[] logs) {
     Arrays.sort(logs, (log1, log2) -> {

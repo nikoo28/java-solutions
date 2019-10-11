@@ -4,7 +4,7 @@ package leetcode;
  * Created by nikoo28 on 6/9/19 7:31 PM
  */
 
-public class MaximumSumTwoNonOverlappingSubarrays {
+class MaximumSumTwoNonOverlappingSubarrays {
 
   public int maxSumTwoNoOverlap(int[] A, int L, int M) {
 

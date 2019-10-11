@@ -4,9 +4,9 @@ package leetcode.medium;
  * Created by nikoo28 on 2019-07-21 14:44
  */
 
-public class SearchA2DMatrixII {
+class SearchA2DMatrixII {
 
-  public boolean searchMatrix(int[][] matrix, int target) {
+  private boolean searchMatrix(int[][] matrix, int target) {
 
     int row = matrix.length - 1;
     int col = 0;

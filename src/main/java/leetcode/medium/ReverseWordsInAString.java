@@ -4,9 +4,9 @@ package leetcode.medium;
  * Created by nikoo28 on 2019-08-23 22:44
  */
 
-public class ReverseWordsInAString {
+class ReverseWordsInAString {
 
-  public String reverseWords(String s) {
+  private String reverseWords(String s) {
 
     String[] words = s.split("\\s+");
     StringBuilder reversed = new StringBuilder();

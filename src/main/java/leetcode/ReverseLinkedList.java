@@ -4,7 +4,7 @@ package leetcode;
  * Created by nikoo28 on 12/17/17 10:40 PM
  */
 
-public class ReverseLinkedList {
+class ReverseLinkedList {
 
   public ListNode reverseList(ListNode head) {
 

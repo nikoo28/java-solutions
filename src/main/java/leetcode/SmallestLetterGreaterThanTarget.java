@@ -4,7 +4,7 @@ package leetcode;
  * Created by nikoo28 on 12/17/17 12:56 AM
  */
 
-public class SmallestLetterGreaterThanTarget {
+class SmallestLetterGreaterThanTarget {
 
   public char nextGreatestLetter(char[] letters, char target) {
 

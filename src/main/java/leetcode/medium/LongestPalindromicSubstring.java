@@ -4,7 +4,7 @@ package leetcode.medium;
  * Created by nikoo28 on 12/18/17 10:14 PM
  */
 
-public class LongestPalindromicSubstring {
+class LongestPalindromicSubstring {
 
   public String longestPalindrome(String str) {
 

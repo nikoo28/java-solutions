@@ -4,7 +4,7 @@ package leetcode.easy;
  * Created by nikoo28 on 2019-07-21 14:59
  */
 
-public class RotateArray {
+class RotateArray {
 
   public void rotate(int[] nums, int k) {
 
@@ -17,7 +17,7 @@ public class RotateArray {
     reverse(nums, k, nums.length - 1);
   }
 
-  public void reverse(int[] nums, int start, int end) {
+  private void reverse(int[] nums, int start, int end) {
     while (start < end) {
       int temp = nums[start];
       nums[start] = nums[end];

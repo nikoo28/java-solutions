@@ -6,7 +6,7 @@ import java.util.*;
  * Created by nikoo28 on 7/6/19 7:44 PM
  */
 
-public class LRUCache {
+class LRUCache {
 
 //  Set<Integer> lru;
 //  final int maxCapacity;
@@ -68,11 +68,12 @@ public class LRUCache {
 //    valTicksPair.put(key, ticks);
 //  }
 
-  DoubleListNode head, tail;
-  Map<Integer, DoubleListNode> keyAddressMap;
-  int maxCapacity;
+  private DoubleListNode head;
+  private DoubleListNode tail;
+  private Map<Integer, DoubleListNode> keyAddressMap;
+  private int maxCapacity;
 
-  public LRUCache(int capacity) {
+  private LRUCache(int capacity) {
     keyAddressMap = new HashMap<>(capacity);
     maxCapacity = capacity;
     head = new DoubleListNode();
@@ -83,7 +84,7 @@ public class LRUCache {
     tail.prev = head;
   }
 
-  public int get(int key) {
+  private int get(int key) {
 
     if (!keyAddressMap.containsKey(key))
       return -1;
@@ -98,7 +99,7 @@ public class LRUCache {
     addToHead(node);
   }
 
-  public void put(int key, int value) {
+  private void put(int key, int value) {
 
     if (keyAddressMap.containsKey(key)) {
       DoubleListNode node = keyAddressMap.get(key);

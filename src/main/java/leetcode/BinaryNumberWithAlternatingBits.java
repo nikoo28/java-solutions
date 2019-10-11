@@ -4,7 +4,7 @@ package leetcode;
  * Created by nikoo28 on 12/16/17 10:43 PM
  */
 
-public class BinaryNumberWithAlternatingBits {
+class BinaryNumberWithAlternatingBits {
 
   public boolean hasAlternatingBits(int n) {
 

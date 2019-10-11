@@ -6,7 +6,7 @@ import java.util.*;
  * Created by nikoo28 on 2019-09-14 17:18
  */
 
-public class TopKFrequentWords {
+class TopKFrequentWords {
 
   public List<String> topKFrequent(String[] words, int k) {
 

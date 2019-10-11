@@ -4,7 +4,7 @@ package leetcode.easy;
  * Created by nikoo28 on 2019-09-14 17:34
  */
 
-public class StringCompression {
+class StringCompression {
 
   public int compress(char[] chars) {
     int anchor = 0, write = 0;

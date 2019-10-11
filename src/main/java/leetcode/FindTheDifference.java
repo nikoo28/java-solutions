@@ -3,7 +3,7 @@ package leetcode;
 /**
  * @author nikoo28 on 9/17/17
  */
-public class FindTheDifference {
+class FindTheDifference {
 
   public char findTheDifference(String s, String t) {
 

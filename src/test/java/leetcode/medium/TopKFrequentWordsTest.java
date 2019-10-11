@@ -11,12 +11,12 @@ import static org.junit.jupiter.api.Assertions.*;
  * Created by nikoo28 on 2019-09-14 18:51
  */
 
-public class TopKFrequentWordsTest {
+class TopKFrequentWordsTest {
 
   private TopKFrequentWords topKFrequentWords = new TopKFrequentWords();
 
   @Test
-  public void testTopKFrequent1() {
+  void testTopKFrequent1() {
 
     String[] words = {"i", "love", "studyalgorithms", "i", "love", "coding"};
     List<String> expectedResult = new ArrayList<>();
@@ -28,7 +28,7 @@ public class TopKFrequentWordsTest {
   }
 
   @Test
-  public void testTopKFrequent2() {
+  void testTopKFrequent2() {
 
     String[] words = {"the", "day", "is", "sunny", "the", "the", "the", "sunny", "is", "is"};
     List<String> expectedResult = new ArrayList<>();

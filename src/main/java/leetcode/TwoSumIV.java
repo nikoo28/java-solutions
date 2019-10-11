@@ -6,7 +6,7 @@ import java.util.List;
 /**
  * @author nikoo28 on 9/17/17
  */
-public class TwoSumIV {
+class TwoSumIV {
 
   public boolean findTarget(TreeNode root, int k) {
 

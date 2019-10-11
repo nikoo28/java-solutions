@@ -4,11 +4,11 @@ package leetcode.medium;
  * Created by nikoo28 on 2019-08-10 19:51
  */
 
-public class NumberOfDiceRollsWIthTargetSum {
+class NumberOfDiceRollsWIthTargetSum {
 
   private static final int MOD = (int) (Math.pow(10, 9) + 7);
 
-  public int numRollsToTarget(int dices, int faces, int target) {
+  private int numRollsToTarget(int dices, int faces, int target) {
 
     long[][] dp = new long[dices + 1][target + 1];
 

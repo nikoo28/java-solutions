@@ -4,9 +4,9 @@ package leetcode;
  * Created by nikoo28 on 9/23/18 12:16 PM
  */
 
-public class RomanToInteger {
+class RomanToInteger {
 
-  public int romanToInt(String s) {
+  private int romanToInt(String s) {
 
     int num = 0;
 

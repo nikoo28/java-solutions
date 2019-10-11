@@ -4,7 +4,7 @@ package leetcode.easy;
  * Created by nikoo28 on 2019-10-05 18:20
  */
 
-public class MaximumSubarray {
+class MaximumSubarray {
 
   public int maxSubArray(int[] nums) {
 

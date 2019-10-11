@@ -4,7 +4,7 @@ package leetcode;
  * Created by nikoo28 on 7/10/19 12:21 AM
  */
 
-public class MergeTwoSortedLists {
+class MergeTwoSortedLists {
 
   public ListNode mergeTwoLists(ListNode l1, ListNode l2) {
 

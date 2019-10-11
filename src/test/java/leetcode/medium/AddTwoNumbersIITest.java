@@ -11,7 +11,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class AddTwoNumbersIITest {
 
-  AddTwoNumbersII addTwoNumbersII = new AddTwoNumbersII();
+  private AddTwoNumbersII addTwoNumbersII = new AddTwoNumbersII();
 
   @Test
   void testAddTwoNumbers() {

@@ -4,7 +4,7 @@ package leetcode.easy;
  * Created by nikoo28 on 2019-07-21 12:27
  */
 
-public class CountPrimes {
+class CountPrimes {
   public int countPrimes(int n) {
     boolean[] notPrime = new boolean[n];
     int count = 0;

@@ -9,7 +9,7 @@ import java.util.Set;
  * Created by nikoo28 on 2019-07-21 12:38
  */
 
-public class IntersectionOfTwoLinkedLists {
+class IntersectionOfTwoLinkedLists {
 
   public ListNode getIntersectionNode(ListNode headA, ListNode headB) {
 

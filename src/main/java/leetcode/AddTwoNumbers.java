@@ -4,7 +4,7 @@ package leetcode;
  * Created by nikoo28 on 7/5/19 12:29 AM
  */
 
-public class AddTwoNumbers {
+class AddTwoNumbers {
 
   public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
     if (l1 == null)

@@ -9,9 +9,9 @@ import java.util.TreeMap;
  * Created by nikoo28 on 2019-09-14 15:26
  */
 
-public class KClosestPointsToOrigin {
+class KClosestPointsToOrigin {
 
-  public int[][] kClosest(int[][] points, int K) {
+  private int[][] kClosest(int[][] points, int K) {
 
     Map<Integer, List<String>> distancePointMap = new TreeMap<>();
     int[][] result = new int[K][2];

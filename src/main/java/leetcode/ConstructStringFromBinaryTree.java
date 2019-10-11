@@ -4,9 +4,9 @@ package leetcode;
  * Created by nikoo28 on 12/17/17 3:01 AM
  */
 
-public class ConstructStringFromBinaryTree {
+class ConstructStringFromBinaryTree {
 
-  public String tree2str(TreeNode t) {
+  private String tree2str(TreeNode t) {
 
     if (t == null)
       return "";

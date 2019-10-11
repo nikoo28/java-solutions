@@ -5,8 +5,9 @@ package leetcode;
  */
 
 class UnionFind {
-  int[] father;
-  int m, n;
+  private int[] father;
+  private int m;
+  private int n;
   int count = 0;
 
   UnionFind(char[][] grid) {
@@ -33,7 +34,7 @@ class UnionFind {
     }
   }
 
-  public int find(int node) {
+  private int find(int node) {
     if (father[node] == node) {
       return node;
     }

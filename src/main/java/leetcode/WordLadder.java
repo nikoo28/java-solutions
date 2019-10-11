@@ -6,9 +6,9 @@ import java.util.*;
  * Created by nikoo28 on 7/18/19 10:58 PM
  */
 
-public class WordLadder {
+class WordLadder {
 
-  public int ladderLength(String beginWord, String endWord, List<String> wordList) {
+  private int ladderLength(String beginWord, String endWord, List<String> wordList) {
 
     Set<String> dict = new HashSet<>(wordList);
     Queue<String> queue = new LinkedList<>();

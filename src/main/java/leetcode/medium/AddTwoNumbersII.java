@@ -8,7 +8,7 @@ import java.util.Stack;
  * Created by nikoo28 on 2019-08-24 02:08
  */
 
-public class AddTwoNumbersII {
+class AddTwoNumbersII {
 
   public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
 

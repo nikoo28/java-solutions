@@ -4,7 +4,7 @@ package leetcode;
  * Created by nikoo28 on 7/12/19 1:23 AM
  */
 
-public class ProductOfArrayExceptSelf {
+class ProductOfArrayExceptSelf {
 
   public int[] productExceptSelf(int[] nums) {
 

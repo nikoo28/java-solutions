@@ -6,7 +6,7 @@ import java.util.HashSet;
  * Created by nikoo28 on 9/22/18 5:25 PM
  */
 
-public class UniqueMorseCodeWords {
+class UniqueMorseCodeWords {
 
   public int uniqueMorseCodeRepresentations(String[] words) {
 

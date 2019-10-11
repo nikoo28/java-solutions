@@ -4,7 +4,7 @@ package leetcode;
  * Created by nikoo28 on 9/22/18 5:43 PM
  */
 
-public class PeakIndexInAMountainArray {
+class PeakIndexInAMountainArray {
 
   public int peakIndexInMountainArray(int[] A) {
 

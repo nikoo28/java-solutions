@@ -4,7 +4,7 @@ package leetcode;
  * Created by nikoo28 on 12/17/17 2:58 PM
  */
 
-public class BestTimeToBuyAndSellAStockII {
+class BestTimeToBuyAndSellAStockII {
 
   public int maxProfit(int[] prices) {
 

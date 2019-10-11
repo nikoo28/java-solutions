@@ -4,7 +4,7 @@ package leetcode;
  * Created by nikoo28 on 12/18/17 9:25 PM
  */
 
-public class ContainerWithMostWater {
+class ContainerWithMostWater {
 
   public int maxArea(int[] height) {
 

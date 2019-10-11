@@ -4,7 +4,7 @@ package leetcode;
  * Created by nikoo28 on 7/19/19 2:39 AM
  */
 
-public class StringToInteger {
+class StringToInteger {
 
   public int myAtoi(String str) {
 

@@ -7,7 +7,7 @@ import java.util.Map;
  * Created by nikoo28 on 2019-09-08 20:33
  */
 
-public class SubArraySumEqualsK {
+class SubArraySumEqualsK {
 
   public int subarraySum(int[] nums, int k) {
 

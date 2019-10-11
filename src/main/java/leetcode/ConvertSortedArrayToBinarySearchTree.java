@@ -4,7 +4,7 @@ package leetcode;
  * Created by nikoo28 on 9/23/18 12:57 PM
  */
 
-public class ConvertSortedArrayToBinarySearchTree {
+class ConvertSortedArrayToBinarySearchTree {
 
   public TreeNode sortedArrayToBST(int[] nums) {
 

@@ -7,9 +7,9 @@ import java.util.Map;
  * Created by nikoo28 on 2019-08-25 21:09
  */
 
-public class LongestVowelSubsequence {
+class LongestVowelSubsequence {
 
-  public static int longestSubsequence(String s) {
+  private static int longestSubsequence(String s) {
 
     Map<Character, Character> preVowelMap = new HashMap<>();
     preVowelMap.put('u', 'o');

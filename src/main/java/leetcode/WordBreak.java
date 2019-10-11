@@ -6,7 +6,7 @@ import java.util.*;
  * Created by nikoo28 on 7/18/19 9:50 PM
  */
 
-public class WordBreak {
+class WordBreak {
 
   public boolean wordBreak(String s, List<String> wordDict) {
 

@@ -1,6 +1,6 @@
 package leetcode;
 
-public class JudgeRouteCircle {
+class JudgeRouteCircle {
 
   public boolean judgeCircle(String moves) {
 

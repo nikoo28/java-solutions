@@ -3,7 +3,7 @@ package leetcode;
 /**
  * @author nikoo28 on 9/10/17
  */
-public class NumberComplement {
+class NumberComplement {
 
   public int findComplement(int num) {
     int i = 0;

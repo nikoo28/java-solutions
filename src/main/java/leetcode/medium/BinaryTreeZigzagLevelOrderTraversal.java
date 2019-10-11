@@ -8,7 +8,7 @@ import java.util.*;
  * Created by nikoo28 on 2019-08-24 18:30
  */
 
-public class BinaryTreeZigzagLevelOrderTraversal {
+class BinaryTreeZigzagLevelOrderTraversal {
 
   public List<List<Integer>> zigzagLevelOrder(TreeNode root) {
 

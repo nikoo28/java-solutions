@@ -3,7 +3,7 @@ package leetcode;
 /**
  * @author nikoo28 on 9/15/17
  */
-public class FourLetterWords {
+class FourLetterWords {
 
   public static int four_letter_words(String sentence) {
     String[] split = sentence.split(" ");

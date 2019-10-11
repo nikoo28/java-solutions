@@ -6,9 +6,9 @@ import java.time.LocalDate;
  * Created by nikoo28 on 2019-08-10 19:33
  */
 
-public class DayOfTheYear {
+class DayOfTheYear {
 
-  public int dayOfYear(String date) {
+  private int dayOfYear(String date) {
 
     return LocalDate.parse(date).getDayOfYear();
   }

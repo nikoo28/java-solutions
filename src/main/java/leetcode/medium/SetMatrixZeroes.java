@@ -7,7 +7,7 @@ import java.util.Set;
  * Created by nikoo28 on 2019-07-21 15:15
  */
 
-public class SetMatrixZeroes {
+class SetMatrixZeroes {
 
   public void setZeroes(int[][] matrix) {
     int R = matrix.length;

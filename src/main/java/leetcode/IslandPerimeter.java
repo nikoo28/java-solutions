@@ -3,7 +3,7 @@ package leetcode;
 /**
  * @author nikoo28 on 9/10/17
  */
-public class IslandPerimeter {
+class IslandPerimeter {
 
   public int islandPerimeter(int[][] grid) {
 

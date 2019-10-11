@@ -6,7 +6,7 @@ import java.util.HashSet;
  * Created by nikoo28 on 7/16/19 2:27 AM
  */
 
-public class JewelsAndStones {
+class JewelsAndStones {
 
   public int numJewelsInStones(String J, String S) {
 

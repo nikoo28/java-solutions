@@ -16,7 +16,7 @@ class Employee {
   public List<Integer> subordinates;
 }
 
-public class EmployeeImportance {
+class EmployeeImportance {
 
   public int getImportance(List<Employee> employees, int id) {
 

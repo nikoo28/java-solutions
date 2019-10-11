@@ -4,9 +4,9 @@ package leetcode.medium;
  * Created by nikoo28 on 2019-09-14 17:38
  */
 
-public class SearchInRotatedSortedArray {
+class SearchInRotatedSortedArray {
 
-  public int findRotationIndex(int[] nums) {
+  private int findRotationIndex(int[] nums) {
 
     int left = 0;
     int right = nums.length - 1;
@@ -28,7 +28,7 @@ public class SearchInRotatedSortedArray {
     return -1;
   }
 
-  public int binarySearch(int[] arr, int left, int right, int target) {
+  private int binarySearch(int[] arr, int left, int right, int target) {
 
     while (left <= right) {
       int mid = (left + right) / 2;

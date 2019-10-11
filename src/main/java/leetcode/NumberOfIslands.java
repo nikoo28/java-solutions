@@ -4,7 +4,7 @@ package leetcode;
  * Created by nikoo28 on 12/18/17 9:40 PM
  */
 
-public class NumberOfIslands {
+class NumberOfIslands {
 
   public int numIslands(char[][] grid) {
 

@@ -3,7 +3,7 @@ package leetcode;
 /**
  * @author nikoo28 on 9/15/17
  */
-public class AlmostPalindromes {
+class AlmostPalindromes {
 
     public static int almost_palindromes(String str) {
 

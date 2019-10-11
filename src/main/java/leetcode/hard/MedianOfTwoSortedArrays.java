@@ -4,7 +4,7 @@ package leetcode.hard;
  * Created by nikoo28 on 2019-08-18 23:25
  */
 
-public class MedianOfTwoSortedArrays {
+class MedianOfTwoSortedArrays {
 
   public double findMedianSortedArrays(int[] nums1, int[] nums2) {
 

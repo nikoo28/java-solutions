@@ -4,9 +4,9 @@ package leetcode;
  * Created by nikoo28 on 12/18/17 3:25 PM
  */
 
-public class ZombieClusters {
+class ZombieClusters {
 
-  public int zombieClusterDFS(String[] zombies) {
+  private int zombieClusterDFS(String[] zombies) {
 
     int N = zombies[0].length();
 
@@ -24,9 +24,9 @@ public class ZombieClusters {
     return findClustersDFS(M, N);
   }
 
-  int[][] distance = {{1, 0}, {-1, 0}, {0, 1}, {0, -1}};
+  private int[][] distance = {{1, 0}, {-1, 0}, {0, 1}, {0, -1}};
 
-  public int numIslands(char[][] grid) {
+  private int numIslands(char[][] grid) {
     if (grid == null || grid.length == 0 || grid[0].length == 0) {
       return 0;
     }
@@ -51,7 +51,7 @@ public class ZombieClusters {
     return uf.count;
   }
 
-  static int findClustersDFS(int[][] M, int N) {
+  private static int findClustersDFS(int[][] M, int N) {
 
     boolean[] visited = new boolean[N];
 
@@ -66,7 +66,7 @@ public class ZombieClusters {
     return count;
   }
 
-  static void DFS(int[][] M, int N, boolean[] visited, int s) {
+  private static void DFS(int[][] M, int N, boolean[] visited, int s) {
 
     if (!visited[s]) {
 

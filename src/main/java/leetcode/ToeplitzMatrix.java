@@ -4,7 +4,7 @@ package leetcode;
  * Created by nikoo28 on 9/23/18 11:41 AM
  */
 
-public class ToeplitzMatrix {
+class ToeplitzMatrix {
 
   public boolean isToeplitzMatrix(int[][] matrix) {
 

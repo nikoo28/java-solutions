@@ -6,8 +6,8 @@ import java.util.*;
  * Created by nikoo28 on 2019-08-25 22:04
  */
 
-public class ReachableEmployees {
-  public static void bfs(int i, boolean[] visited, ArrayList<Integer>[] graph, int[][] bfs_res) {
+class ReachableEmployees {
+  private static void bfs(int i, boolean[] visited, ArrayList<Integer>[] graph, int[][] bfs_res) {
 
     visited[i] = true;
     Queue<Integer> q = new LinkedList<>();
@@ -29,7 +29,7 @@ public class ReachableEmployees {
 
   }
 
-  public static List<Integer> order(int employeeNodes, List<Integer> employeesFrom, List<Integer> employeesTo, int host) {
+  private static List<Integer> order(int employeeNodes, List<Integer> employeesFrom, List<Integer> employeesTo, int host) {
 
     List<Integer> res = new ArrayList<>();
 

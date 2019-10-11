@@ -7,9 +7,9 @@ import java.util.Stack;
 /**
  * @author nikoo28 on 9/16/17
  */
-public class NextGreaterElement1 {
+class NextGreaterElement1 {
 
-  public int[] nextGreaterElement(int[] nums1, int[] nums2) {
+  private int[] nextGreaterElement(int[] nums1, int[] nums2) {
 
     Map<Integer, Integer> numberNGE = new HashMap<>();
     Stack<Integer> numStack = new Stack<>();

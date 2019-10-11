@@ -10,7 +10,7 @@ import java.util.stream.Collectors;
  * Created by nikoo28 on 2019-07-20 19:32
  */
 
-public class NumberOfEquivalentDominoes {
+class NumberOfEquivalentDominoes {
 
   public int numEquivDominoPairs(int[][] dominoes) {
 

@@ -5,7 +5,7 @@ import java.util.Arrays;
 /**
  * @author nikoo28 on 9/10/17
  */
-public class ArrayPartition1 {
+class ArrayPartition1 {
 
   public int arrayPairSum(int[] nums) {
 

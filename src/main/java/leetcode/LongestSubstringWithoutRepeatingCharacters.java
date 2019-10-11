@@ -7,7 +7,7 @@ import java.util.List;
  * Created by nikoo28 on 12/18/17 9:29 PM
  */
 
-public class LongestSubstringWithoutRepeatingCharacters {
+class LongestSubstringWithoutRepeatingCharacters {
 
   public int lengthOfLongestSubstring(String s) {
 

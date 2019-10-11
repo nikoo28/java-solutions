@@ -8,9 +8,9 @@ import java.util.Set;
 /**
  * @author nikoo28 on 9/15/17
  */
-public class ASCIIDistance {
+class ASCIIDistance {
 
-  public int distance(String str1, String str2) {
+  private int distance(String str1, String str2) {
 
     char[] histogram = new char[26];
     Set<Character> str1Set = new HashSet<>();

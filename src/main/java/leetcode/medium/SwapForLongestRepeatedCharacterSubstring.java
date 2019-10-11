@@ -7,9 +7,9 @@ import java.util.Set;
  * Created by nikoo28 on 2019-08-10 20:35
  */
 
-public class SwapForLongestRepeatedCharacterSubstring {
+class SwapForLongestRepeatedCharacterSubstring {
 
-  public int maxRepOpt1(String text) {
+  private int maxRepOpt1(String text) {
 
     Set<Character> x = new HashSet<>();
     for (int i = 0; i < text.length(); i++) {
@@ -28,7 +28,7 @@ public class SwapForLongestRepeatedCharacterSubstring {
     return maxlen;
   }
 
-  static int findLen(String text, char ch)
+  private static int findLen(String text, char ch)
   {
     int maxlen = 1;
     int cnt = 0;

@@ -4,7 +4,7 @@ package codility.painless;
  * Created by nikoo28 on 2019-08-25 20:03
  */
 
-public class CyclicRotation {
+class CyclicRotation {
 
   public int[] solution(int[] nums, int k) {
     // write your code in Java SE 8
@@ -20,7 +20,7 @@ public class CyclicRotation {
     return nums;
   }
 
-  public void reverse(int[] nums, int start, int end) {
+  private void reverse(int[] nums, int start, int end) {
     while (start < end) {
       int temp = nums[start];
       nums[start] = nums[end];
