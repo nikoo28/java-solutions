@@ -14,8 +14,7 @@ public class MergeKSortedLists {
 
     for (int i = 1; i < lists.length; i++) {
 
-      ListNode merged = mergeTwoLists(mergedLists, lists[i]);
-      mergedLists = merged;
+      mergedLists = mergeTwoLists(mergedLists, lists[i]);
     }
 
     return mergedLists;

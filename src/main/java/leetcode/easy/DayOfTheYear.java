@@ -10,8 +10,7 @@ public class DayOfTheYear {
 
   public int dayOfYear(String date) {
 
-    int dayOfYear = LocalDate.parse(date).getDayOfYear();
-    return dayOfYear;
+    return LocalDate.parse(date).getDayOfYear();
   }
 
   public static void main(String[] args) {

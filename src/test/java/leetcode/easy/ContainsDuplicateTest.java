@@ -15,18 +15,18 @@ class ContainsDuplicateTest {
   @Test
   void testContainsDuplicate1() {
     int[] nums = {1, 2, 3, 1};
-    assertEquals(true, containsDuplicate.containsDuplicate(nums));
+    assertTrue(containsDuplicate.containsDuplicate(nums));
   }
 
   @Test
   void testContainsDuplicate2() {
     int[] nums = {1, 2, 3, 4};
-    assertEquals(false, containsDuplicate.containsDuplicate(nums));
+    assertFalse(containsDuplicate.containsDuplicate(nums));
   }
 
   @Test
   void testContainsDuplicate3() {
     int[] nums = {1, 1, 1, 3, 3, 4, 3, 2, 4, 2};
-    assertEquals(true, containsDuplicate.containsDuplicate(nums));
+    assertTrue(containsDuplicate.containsDuplicate(nums));
   }
 }

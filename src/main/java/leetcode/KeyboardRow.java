@@ -34,8 +34,7 @@ public class KeyboardRow {
       }
     }
 
-    String[] op = possibleWords.toArray(new String[possibleWords.size()]);
-    return op;
+    return possibleWords.toArray(new String[0]);
   }
 
   public static void main(String[] args) {

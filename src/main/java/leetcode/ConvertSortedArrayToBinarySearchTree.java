@@ -11,8 +11,7 @@ public class ConvertSortedArrayToBinarySearchTree {
     if (nums.length == 0)
       return null;
 
-    TreeNode result = helper(nums, 0, nums.length - 1);
-    return result;
+    return helper(nums, 0, nums.length - 1);
   }
 
   private TreeNode helper(int[] nums, int low, int high) {

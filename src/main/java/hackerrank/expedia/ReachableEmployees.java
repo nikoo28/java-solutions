@@ -7,7 +7,7 @@ import java.util.*;
  */
 
 public class ReachableEmployees {
-  public static void bfs(int i, boolean visited[], ArrayList<Integer>[] graph, int[][] bfs_res) {
+  public static void bfs(int i, boolean[] visited, ArrayList<Integer>[] graph, int[][] bfs_res) {
 
     visited[i] = true;
     Queue<Integer> q = new LinkedList<>();

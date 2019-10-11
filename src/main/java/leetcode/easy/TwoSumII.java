@@ -21,8 +21,7 @@ public class TwoSumII {
         break;
     }
 
-    int[] result = {start + 1, end + 1};
-    return result;
+    return new int[]{start + 1, end + 1};
   }
 
 }

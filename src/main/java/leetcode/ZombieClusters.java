@@ -66,7 +66,7 @@ public class ZombieClusters {
     return count;
   }
 
-  static void DFS(int M[][], int N, boolean visited[], int s) {
+  static void DFS(int[][] M, int N, boolean[] visited, int s) {
 
     if (!visited[s]) {
 

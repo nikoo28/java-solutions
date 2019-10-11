@@ -42,7 +42,7 @@ public class InsertionSortPartOne {
     for (int n : ar) {
       System.out.print(n + " ");
     }
-    System.out.println("");
+    System.out.println();
   }
 
 

@@ -29,9 +29,6 @@ public class JudgeRouteCircle {
       }
     }
 
-    if (x == 0 && y == 0)
-      return true;
-
-    return false;
+    return x == 0 && y == 0;
   }
 }
