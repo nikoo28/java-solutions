@@ -9,7 +9,7 @@ import java.util.Set;
 
 class ContainsDuplicateII {
 
-  public boolean containsNearbyDuplicate(int[] nums, int k) {
+  boolean containsNearbyDuplicate(int[] nums, int k) {
     Set<Integer> set = new HashSet<>();
 
     for (int i = 0; i < nums.length; i++) {

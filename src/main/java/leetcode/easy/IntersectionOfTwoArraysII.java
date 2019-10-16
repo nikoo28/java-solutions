@@ -7,9 +7,9 @@ import java.util.HashMap;
  * Created by nikoo28 on 10/15/19 11:59 PM
  */
 
-public class IntersectionOfTwoArraysII {
+class IntersectionOfTwoArraysII {
 
-  public int[] intersect(int[] nums1, int[] nums2) {
+  int[] intersect(int[] nums1, int[] nums2) {
     HashMap<Integer, Integer> map = new HashMap<>();
     ArrayList<Integer> result = new ArrayList<>();
 
