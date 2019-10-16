@@ -9,7 +9,7 @@ import java.util.function.BiFunction;
 
 class IdenticalPairOfIndices {
 
-  private int solution(int[] a) {
+  int solution(int[] a) {
 
 //    Integer[] indices = new Integer[a.length];
 //    for (int i = 0; i < a.length; ++i) {
@@ -87,15 +87,6 @@ class IdenticalPairOfIndices {
 //    }
 //
 //    return (int) pairs;
-  }
-
-  public static void main(String[] args) {
-
-    int[] a = {3, 5, 6, 3, 3, 5};
-    IdenticalPairOfIndices identicalPairOfIndices = new IdenticalPairOfIndices();
-
-    System.out.println(identicalPairOfIndices.solution(a));
-
   }
 
 }
