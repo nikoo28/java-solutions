@@ -18,7 +18,6 @@ class FindCommonCharacters {
       for (String currentWord : A) {
 
         int wordCount = 0;
-
         for (char currentChar : currentWord.toCharArray()) {
           if (currentChar == c) {
             wordCount++;

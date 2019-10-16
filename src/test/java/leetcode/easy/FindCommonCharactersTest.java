@@ -59,7 +59,7 @@ class FindCommonCharactersTest {
 
   @Test
   void testCommonChars4() {
-    String[] A = {"bbddabab","cbcddbdd","bbcadcab","dabcacad","cddcacbc","ccbdbcba","cbddaccc","accdcdbb"};
+    String[] A = {"bbddabab", "cbcddbdd", "bbcadcab", "dabcacad", "cddcacbc", "ccbdbcba", "cbddaccc", "accdcdbb"};
 
     List<String> expectedResult = new ArrayList<>();
     expectedResult.add("b");
