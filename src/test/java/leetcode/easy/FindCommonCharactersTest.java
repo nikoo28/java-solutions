@@ -14,7 +14,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class FindCommonCharactersTest {
 
-  FindCommonCharacters findCommonCharacters = new FindCommonCharacters();
+  private FindCommonCharacters findCommonCharacters = new FindCommonCharacters();
 
   @Test
   void testCommonChars1() {

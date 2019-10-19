@@ -10,7 +10,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class ClimbingStairsTest {
 
-  ClimbingStairs climbingStairs = new ClimbingStairs();
+  private ClimbingStairs climbingStairs = new ClimbingStairs();
 
   @Test
   void testClimbStairs() {

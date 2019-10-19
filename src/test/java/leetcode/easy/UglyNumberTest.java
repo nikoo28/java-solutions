@@ -10,7 +10,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class UglyNumberTest {
 
-  UglyNumber uglyNumber = new UglyNumber();
+  private UglyNumber uglyNumber = new UglyNumber();
 
   @Test
   void testIsUgly() {

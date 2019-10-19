@@ -12,7 +12,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class IntersectionOfTwoArraysIITest {
 
-  IntersectionOfTwoArraysII intersectionOfTwoArraysII = new IntersectionOfTwoArraysII();
+  private IntersectionOfTwoArraysII intersectionOfTwoArraysII = new IntersectionOfTwoArraysII();
 
   @Test
   void testIntersect1() {

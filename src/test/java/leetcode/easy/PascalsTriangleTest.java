@@ -13,7 +13,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class PascalsTriangleTest {
 
-  PascalsTriangle pascalsTriangle = new PascalsTriangle();
+  private PascalsTriangle pascalsTriangle = new PascalsTriangle();
 
   @Test
   void testGenerate() {
