@@ -4,9 +4,9 @@ package leetcode;
  * Created by nikoo28 on 12/17/17 1:27 AM
  */
 
-public class MaxAreaOfIsland {
+class MaxAreaOfIsland {
 
-  public int maxAreaOfIsland(int[][] grid) {
+  private int maxAreaOfIsland(int[][] grid) {
 
     int index = 2;
     int maxArea = 0;
@@ -32,7 +32,7 @@ public class MaxAreaOfIsland {
     return maxArea;
   }
 
-  static int floodFill(int[][] grid, int i, int j, int val, int area) {
+  private static int floodFill(int[][] grid, int i, int j, int val, int area) {
 
     if (grid[i][j] == 0) return area;
     if (grid[i][j] != 1) return area;

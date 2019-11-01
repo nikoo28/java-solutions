@@ -4,7 +4,7 @@ package leetcode.hard;
  * Created by nikoo28 on 7/8/19 12:56 AM
  */
 
-public class TrappingRainWater {
+class TrappingRainWater {
 
   public int trap(int[] height) {
 

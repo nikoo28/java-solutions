@@ -6,7 +6,7 @@ import java.util.Stack;
  * Created by nikoo28 on 7/19/19 2:36 AM
  */
 
-public class MinStack {
+class MinStack {
 
   private Stack<Integer> mStack = new Stack<>();
   private Stack<Integer> mMinStack = new Stack<>();

@@ -4,9 +4,9 @@ package leetcode;
  * @author nikoo28 on 9/16/17
  */
 
-public class TrimABinarySearchTree {
+class TrimABinarySearchTree {
 
-  public TreeNode trimBST(TreeNode root, int L, int R) {
+  private TreeNode trimBST(TreeNode root, int L, int R) {
 
     if (root == null)
       return null;

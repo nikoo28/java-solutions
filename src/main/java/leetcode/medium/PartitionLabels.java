@@ -7,9 +7,9 @@ import java.util.List;
  * Created by nikoo28 on 2019-07-20 22:41
  */
 
-public class PartitionLabels {
+class PartitionLabels {
 
-  public List<Integer> partitionLabels(String S) {
+  private List<Integer> partitionLabels(String S) {
 
     List<Integer> partitions = new ArrayList<>();
 

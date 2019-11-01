@@ -4,15 +4,14 @@ package leetcode;
  * Created by nikoo28 on 9/23/18 12:57 PM
  */
 
-public class ConvertSortedArrayToBinarySearchTree {
+class ConvertSortedArrayToBinarySearchTree {
 
   public TreeNode sortedArrayToBST(int[] nums) {
 
     if (nums.length == 0)
       return null;
 
-    TreeNode result = helper(nums, 0, nums.length - 1);
-    return result;
+    return helper(nums, 0, nums.length - 1);
   }
 
   private TreeNode helper(int[] nums, int low, int high) {

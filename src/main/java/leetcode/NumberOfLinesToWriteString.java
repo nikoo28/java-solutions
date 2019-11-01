@@ -4,9 +4,9 @@ package leetcode;
  * Created by nikoo28 on 9/22/18 6:43 PM
  */
 
-public class NumberOfLinesToWriteString {
+class NumberOfLinesToWriteString {
 
-  public int[] numberOfLines(int[] widths, String S) {
+  private int[] numberOfLines(int[] widths, String S) {
 
     int lines = 1;
     int lineWidth = 0;

@@ -4,7 +4,7 @@ package leetcode;
  * Created by nikoo28 on 12/17/17 2:29 PM
  */
 
-public class RangeAddition2 {
+class RangeAddition2 {
 
   public int maxCount(int m, int n, int[][] ops) {
     if (ops == null || ops.length == 0) {

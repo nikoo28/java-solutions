@@ -4,9 +4,9 @@ package leetcode;
  * Created by nikoo28 on 6/3/19 1:43 AM
  */
 
-public class ArrayNesting {
+class ArrayNesting {
 
-  public int findSetS(int[] nums) {
+  private int findSetS(int[] nums) {
     boolean[] visited = new boolean[nums.length];
     int res = 0;
     for (int i = 0; i < nums.length; i++) {

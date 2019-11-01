@@ -4,9 +4,9 @@ package leetcode.easy;
  * Created by nikoo28 on 2019-08-24 22:36
  */
 
-public class MergeSortedArray {
+class MergeSortedArray {
 
-  public void merge(int[] nums1, int m, int[] nums2, int n) {
+  private void merge(int[] nums1, int m, int[] nums2, int n) {
 
     int lastPointer1 = m - 1;
     int lastPointer2 = n - 1;

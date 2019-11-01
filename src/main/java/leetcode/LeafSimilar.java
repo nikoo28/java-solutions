@@ -7,7 +7,7 @@ import java.util.List;
  * Created by nikoo28 on 9/22/18 7:28 PM
  */
 
-public class LeafSimilar {
+class LeafSimilar {
 
   public boolean leafSimilar(TreeNode root1, TreeNode root2) {
 

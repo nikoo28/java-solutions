@@ -6,9 +6,9 @@ import java.util.*;
  * Created by nikoo28 on 7/18/19 2:03 AM
  */
 
-public class RandomizedSet {
+class RandomizedSet {
 
-  Map<Integer, Integer> valueValueMap;
+  private Map<Integer, Integer> valueValueMap;
 
   /**
    * Initialize your data structure here.

@@ -4,7 +4,7 @@ package leetcode;
  * Created by nikoo28 on 12/17/17 3:23 AM
  */
 
-public class ConstructRectangle {
+class ConstructRectangle {
 
   public int[] constructRectangle(int area) {
 

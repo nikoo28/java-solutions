@@ -9,9 +9,9 @@ import java.util.Queue;
  * Created by nikoo28 on 2019-08-17 19:42
  */
 
-public class MaximumLevelSumOfABinaryTree {
+class MaximumLevelSumOfABinaryTree {
 
-  public int maxLevelSum(TreeNode root) {
+  private int maxLevelSum(TreeNode root) {
 
     Queue<TreeNode> levelQueue = new LinkedList<>();
     int maxSum = 0;

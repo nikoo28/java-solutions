@@ -3,9 +3,9 @@ package leetcode;
 /**
  * @author nikoo28 on 12/1/17
  */
-public class StringCompression {
+class StringCompression {
 
-  public static int compress(char[] chars) {
+  private static int compress(char[] chars) {
 
     if (chars.length == 1)
       return 1;

@@ -6,7 +6,7 @@ import java.util.*;
  * Created by nikoo28 on 12/18/17 11:01 PM
  */
 
-public class GroupAnagrams {
+class GroupAnagrams {
 
   public List<List<String>> groupAnagrams(String[] strs) {
 

@@ -2,10 +2,10 @@ package hackerrank.sorting;
 
 import java.util.Scanner;
 
-public class InsertionSortPartOne {
+class InsertionSortPartOne {
 
 
-  public static void insertIntoSorted(int[] ar) {
+  private static void insertIntoSorted(int[] ar) {
     int n = ar.length;
     int insert = ar[n - 1];
 
@@ -42,7 +42,7 @@ public class InsertionSortPartOne {
     for (int n : ar) {
       System.out.print(n + " ");
     }
-    System.out.println("");
+    System.out.println();
   }
 
 

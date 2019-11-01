@@ -6,7 +6,7 @@ import leetcode.ListNode;
  * Created by nikoo28 on 7/10/19 2:21 AM
  */
 
-public class MergeKSortedLists {
+class MergeKSortedLists {
 
   public ListNode mergeKLists(ListNode[] lists) {
 
@@ -14,8 +14,7 @@ public class MergeKSortedLists {
 
     for (int i = 1; i < lists.length; i++) {
 
-      ListNode merged = mergeTwoLists(mergedLists, lists[i]);
-      mergedLists = merged;
+      mergedLists = mergeTwoLists(mergedLists, lists[i]);
     }
 
     return mergedLists;

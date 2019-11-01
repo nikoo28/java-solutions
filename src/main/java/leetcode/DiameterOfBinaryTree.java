@@ -4,9 +4,9 @@ package leetcode;
  * Created by nikoo28 on 9/23/18 11:07 PM
  */
 
-public class DiameterOfBinaryTree {
+class DiameterOfBinaryTree {
 
-  int ans;
+  private int ans;
 
   public int diameterOfBinaryTree(TreeNode root) {
 

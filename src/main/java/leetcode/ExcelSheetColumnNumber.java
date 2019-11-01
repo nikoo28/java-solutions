@@ -4,7 +4,7 @@ package leetcode;
  * Created by nikoo28 on 12/17/17 2:40 PM
  */
 
-public class ExcelSheetColumnNumber {
+class ExcelSheetColumnNumber {
 
   public int titleToNumber(String s) {
 

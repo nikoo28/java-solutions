@@ -2,7 +2,7 @@ package hackerrank.projecteuler;
 
 import java.util.Scanner;
 
-public class Problem7 {
+class Problem7 {
 
   public static void main(String[] args) {
     Scanner sc = new Scanner(System.in);
@@ -33,7 +33,7 @@ public class Problem7 {
     }
   }
 
-  public static int[] findPrime(int[] primeChecker, int[] primeNumbers, int end, int size) {
+  private static int[] findPrime(int[] primeChecker, int[] primeNumbers, int end, int size) {
     int i = 2;
     boolean cond;
     while (end < size) {

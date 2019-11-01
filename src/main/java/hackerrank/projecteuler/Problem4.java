@@ -2,9 +2,9 @@ package hackerrank.projecteuler;
 
 import java.util.Scanner;
 
-public class Problem4 {
+class Problem4 {
 
-  public static int check(String s) {
+  private static int check(String s) {
     int len = s.length();
     for (int i = 0; i < len / 2; i++) {
       if (s.charAt(i) != s.charAt(len - 1 - i)) return 0;

@@ -6,7 +6,7 @@ import java.util.List;
 /**
  * @author nikoo28 on 9/10/17
  */
-public class FizzBuzz {
+class FizzBuzz {
   public List<String> fizzBuzz(int n) {
 
     List<String> resultList = new ArrayList<>();

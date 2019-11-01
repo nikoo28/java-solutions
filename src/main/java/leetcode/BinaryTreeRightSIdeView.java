@@ -9,9 +9,9 @@ import java.util.Queue;
  * Created by nikoo28 on 7/20/19 3:11 PM
  */
 
-public class BinaryTreeRightSIdeView {
+class BinaryTreeRightSIdeView {
 
-  public List<Integer> rightSideView(TreeNode root) {
+  private List<Integer> rightSideView(TreeNode root) {
 
     if (root == null)
       return new ArrayList<>();

@@ -4,7 +4,7 @@ package leetcode.medium;
  * Created by nikoo28 on 2019-08-24 00:57
  */
 
-public class CompareVersionNumbers {
+class CompareVersionNumbers {
 
   public int compareVersion(String version1, String version2) {
 

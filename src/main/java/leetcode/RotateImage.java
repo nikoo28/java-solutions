@@ -4,7 +4,7 @@ package leetcode;
  * Created by nikoo28 on 7/20/19 2:28 PM
  */
 
-public class RotateImage {
+class RotateImage {
 
   public void rotate(int[][] matrix) {
 

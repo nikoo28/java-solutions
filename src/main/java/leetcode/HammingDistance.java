@@ -1,6 +1,6 @@
 package leetcode;
 
-public class HammingDistance {
+class HammingDistance {
 
   public int hammingDistance(int x, int y) {
 

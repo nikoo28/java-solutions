@@ -5,7 +5,7 @@ import java.util.Stack;
 /**
  * @author nikoo28 on 9/15/17
  */
-public class Brackets {
+class Brackets {
 
   public static int bracket_match(String bracket_string) {
 

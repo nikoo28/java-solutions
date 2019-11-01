@@ -7,7 +7,7 @@ import java.util.List;
  * Created by nikoo28 on 12/16/17 2:08 PM
  */
 
-public class FindComplement {
+class FindComplement {
 
   public int findComplement(int num) {
 

@@ -6,7 +6,7 @@ import leetcode.TreeNode;
  * Created by nikoo28 on 7/12/19 3:06 AM
  */
 
-public class SerializeAndDeserializeABinaryTree {
+class SerializeAndDeserializeABinaryTree {
 
   // Encodes a tree to a single string.
   public String serialize(TreeNode root) {

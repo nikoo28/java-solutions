@@ -6,9 +6,9 @@ import java.util.List;
 /**
  * @author nikoo28 on 9/10/17
  */
-public class KeyboardRow {
+class KeyboardRow {
 
-  public static String[] findWords(String[] words) {
+  private static String[] findWords(String[] words) {
 
     List<String> possibleWords = new ArrayList<>();
 
@@ -34,8 +34,7 @@ public class KeyboardRow {
       }
     }
 
-    String[] op = possibleWords.toArray(new String[possibleWords.size()]);
-    return op;
+    return possibleWords.toArray(new String[0]);
   }
 
   public static void main(String[] args) {

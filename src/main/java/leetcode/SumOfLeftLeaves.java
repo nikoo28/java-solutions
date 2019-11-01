@@ -4,9 +4,9 @@ package leetcode;
  * Created by nikoo28 on 12/17/17 3:24 PM
  */
 
-public class SumOfLeftLeaves {
+class SumOfLeftLeaves {
 
-  public int sumOfLeftLeaves(TreeNode root) {
+  private int sumOfLeftLeaves(TreeNode root) {
 
     if (root == null)
       return 0;

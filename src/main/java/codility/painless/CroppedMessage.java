@@ -4,9 +4,9 @@ package codility.painless;
  * Created by nikoo28 on 2019-08-25 14:21
  */
 
-public class CroppedMessage {
+class CroppedMessage {
 
-  public String solution(String message, int K) {
+  private String solution(String message, int K) {
     // write your code in Java SE 8
 
     String[] splits = message.split(" ");

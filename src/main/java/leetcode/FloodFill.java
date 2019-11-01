@@ -4,9 +4,9 @@ package leetcode;
  * Created by nikoo28 on 12/17/17 3:10 AM
  */
 
-public class FloodFill {
+class FloodFill {
 
-  public int[][] floodFill(int[][] image, int sr, int sc, int newColor) {
+  private int[][] floodFill(int[][] image, int sr, int sc, int newColor) {
     if (image[sr][sc] == newColor) return image;
     fill(image, sr, sc, image[sr][sc], newColor);
     return image;

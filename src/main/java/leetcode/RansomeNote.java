@@ -4,7 +4,7 @@ package leetcode;
  * Created by nikoo28 on 12/17/17 3:09 PM
  */
 
-public class RansomeNote {
+class RansomeNote {
 
   public boolean canConstruct(String ransomNote, String magazine) {
 

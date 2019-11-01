@@ -7,9 +7,9 @@ import java.util.Map;
  * Created by nikoo28 on 9/22/18 7:15 PM
  */
 
-public class LoggerRateLimiter {
+class LoggerRateLimiter {
 
-  Map<String, Integer> messageTime;
+  private Map<String, Integer> messageTime;
 
   public LoggerRateLimiter() {
     messageTime = new HashMap<>();

@@ -6,9 +6,9 @@ import leetcode.ListNode;
  * Created by nikoo28 on 2019-07-20 22:26
  */
 
-public class PalindromeLinkedList {
+class PalindromeLinkedList {
 
-  public boolean isPalindrome(ListNode head) {
+  private boolean isPalindrome(ListNode head) {
 
     if (head == null)
       return false;
@@ -40,7 +40,7 @@ public class PalindromeLinkedList {
     return true;
   }
 
-  public ListNode reverseList(ListNode head) {
+  private ListNode reverseList(ListNode head) {
 
     if (head == null || head.next == null)
       return head;

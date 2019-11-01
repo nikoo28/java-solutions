@@ -6,7 +6,7 @@ import java.util.*;
  * Created by nikoo28 on 7/9/19 1:18 AM
  */
 
-public class ThreeSum {
+class ThreeSum {
 
   public List<List<Integer>> threeSum(int[] nums) {
 

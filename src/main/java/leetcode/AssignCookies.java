@@ -6,7 +6,7 @@ import java.util.Arrays;
  * Created by nikoo28 on 12/17/17 8:50 PM
  */
 
-public class AssignCookies {
+class AssignCookies {
 
   public int findContentChildren(int[] g, int[] s) {
     Arrays.sort(g);

@@ -5,7 +5,7 @@ import java.util.StringJoiner;
 /**
  * @author nikoo28 on 9/10/17
  */
-public class ReverseWordsInAString3 {
+class ReverseWordsInAString3 {
 
   public static String reverseWords(String s) {
 

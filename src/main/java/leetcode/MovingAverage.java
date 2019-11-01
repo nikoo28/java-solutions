@@ -7,11 +7,11 @@ import java.util.Queue;
  * Created by nikoo28 on 9/22/18 6:15 PM
  */
 
-public class MovingAverage {
+class MovingAverage {
 
-  Queue<Integer> slidingWindow;
-  double previousSum = 0.0;
-  int limit;
+  private Queue<Integer> slidingWindow;
+  private double previousSum = 0.0;
+  private int limit;
 
   public MovingAverage(int size) {
 

@@ -4,7 +4,7 @@ package leetcode.easy;
  * Created by nikoo28 on 9/23/18 12:40 PM
  */
 
-public class ValidAnagram {
+class ValidAnagram {
 
   public boolean isAnagram(String s, String t) {
 

@@ -6,10 +6,10 @@ import java.util.Stack;
  * Created by nikoo28 on 2019-08-25 20:55
  */
 
-public class Braces {
+class Braces {
 
   // Complete the braces function below.
-  static String[] braces(String[] values) {
+  private static String[] braces(String[] values) {
 
     String[] result = new String[values.length];
     int idx = 0;

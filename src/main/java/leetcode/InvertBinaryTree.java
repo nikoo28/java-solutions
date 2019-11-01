@@ -6,7 +6,7 @@ import java.util.LinkedList;
 /**
  * @author nikoo28 on 9/17/17
  */
-public class InvertBinaryTree {
+class InvertBinaryTree {
 
   public TreeNode invertTree(TreeNode root) {
 

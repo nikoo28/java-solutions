@@ -8,7 +8,7 @@ import java.util.Queue;
 /**
  * @author nikoo28 on 9/10/17
  */
-public class AverageOfLevelsInBinaryTree {
+class AverageOfLevelsInBinaryTree {
 
   public List<Double> averageOfLevels(TreeNode root) {
     List<Double> result = new ArrayList<>();

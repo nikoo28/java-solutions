@@ -4,7 +4,7 @@ package leetcode;
  * Created by nikoo28 on 12/19/17 1:12 AM
  */
 
-public class SortColors {
+class SortColors {
 
   public void sortColors(int[] nums) {
 

@@ -6,9 +6,9 @@ import java.util.*;
  * Created by nikoo28 on 7/19/19 2:44 AM
  */
 
-public class WordLadderII {
+class WordLadderII {
 
-  public List<List<String>> findLadders(String start, String end, List<String> wordList) {
+  private List<List<String>> findLadders(String start, String end, List<String> wordList) {
 
     HashSet<String> dict = new HashSet<>(wordList);
     List<List<String>> res = new ArrayList<>();

@@ -6,7 +6,7 @@ import java.util.Set;
 /**
  * @author nikoo28 on 9/10/17
  */
-public class DistributeCandies {
+class DistributeCandies {
 
   public int distributeCandies(int[] candies) {
 

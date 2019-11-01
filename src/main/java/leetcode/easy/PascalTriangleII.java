@@ -7,7 +7,7 @@ import java.util.List;
  * Created by nikoo28 on 2019-07-21 15:27
  */
 
-public class PascalTriangleII {
+class PascalTriangleII {
 
   public List<Integer> getRow(int rowIndex) {
     Integer[] rowList = new Integer[rowIndex + 1];

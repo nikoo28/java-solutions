@@ -5,9 +5,9 @@ import leetcode.TreeNode;
  * Created by nikoo28 on 12/19/17 12:58 AM
  */
 
-public class LowestCommonAncestorOfBinarySearchTree {
+class LowestCommonAncestorOfBinarySearchTree {
 
-  public TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {
+  private TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {
 
     if (root == null)
       return root;

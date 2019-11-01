@@ -9,13 +9,13 @@ import static org.junit.jupiter.api.Assertions.*;
  * Created by nikoo28 on 2019-09-14 18:59
  */
 
-public class SerializeAndDeserializeABinaryTreeTest {
+class SerializeAndDeserializeABinaryTreeTest {
 
   private SerializeAndDeserializeABinaryTree serializeAndDeserializeABinaryTree =
       new SerializeAndDeserializeABinaryTree();
 
   @Test
-  public void testSerializeAndDeserialize1() {
+  void testSerializeAndDeserialize1() {
     TreeNode root = new TreeNode(1);
 
     root.left = new TreeNode(1);
@@ -27,7 +27,7 @@ public class SerializeAndDeserializeABinaryTreeTest {
     root.right.right = new TreeNode(6);
 
     String data = serializeAndDeserializeABinaryTree.serialize(root);
-    System.out.println(data);
+    // System.out.println(data);
 
     TreeNode deserialized = serializeAndDeserializeABinaryTree.deserialize(data);
     assertEquals(1, deserialized.val);
@@ -42,7 +42,7 @@ public class SerializeAndDeserializeABinaryTreeTest {
   }
 
   @Test
-  public void testSerializeAndDeserialize2() {
+  void testSerializeAndDeserialize2() {
     TreeNode root = new TreeNode(1);
 
     root.left = new TreeNode(2);
@@ -52,7 +52,7 @@ public class SerializeAndDeserializeABinaryTreeTest {
     root.right.right = new TreeNode(5);
 
     String data = serializeAndDeserializeABinaryTree.serialize(root);
-    System.out.println(data);
+    // System.out.println(data);
 
     TreeNode deserialized = serializeAndDeserializeABinaryTree.deserialize(data);
     assertEquals(1, deserialized.val);

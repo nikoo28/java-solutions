@@ -7,9 +7,9 @@ import java.util.List;
  * Created by nikoo28 on 2019-08-24 16:45
  */
 
-public class SpiralMatrix {
+class SpiralMatrix {
 
-  public List<Integer> spiralOrder(int[][] matrix) {
+  private List<Integer> spiralOrder(int[][] matrix) {
 
     List<Integer> result = new ArrayList<>();
 

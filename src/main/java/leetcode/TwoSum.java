@@ -6,7 +6,7 @@ import java.util.*;
  * Created by nikoo28 on 7/4/19 2:50 PM
  */
 
-public class TwoSum {
+class TwoSum {
 
   public int[] twoSum(int[] nums, int target) {
 

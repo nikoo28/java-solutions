@@ -22,11 +22,11 @@ class Node {
   }
 }
 
-public class CopyListWithRandomPointer {
+class CopyListWithRandomPointer {
 
-  Map<Node, Node> oldNodeNewNodeMap = new HashMap<>();
+  private Map<Node, Node> oldNodeNewNodeMap = new HashMap<>();
 
-  public Node copyRandomList(Node head) {
+  private Node copyRandomList(Node head) {
 
     if (head == null)
       return null;

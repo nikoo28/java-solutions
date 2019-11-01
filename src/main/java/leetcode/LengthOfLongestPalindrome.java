@@ -6,9 +6,9 @@ import java.util.HashSet;
  * Created by nikoo28 on 4/30/18 7:54 PM
  */
 
-public class LengthOfLongestPalindrome {
+class LengthOfLongestPalindrome {
 
-  public static int longestPalindrome(String s) {
+  private static int longestPalindrome(String s) {
 
     if (s == null || s.length() == 0)
       return 0;

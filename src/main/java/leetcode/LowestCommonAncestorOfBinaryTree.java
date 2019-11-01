@@ -4,9 +4,9 @@ package leetcode;
  * Created by nikoo28 on 12/19/17 12:55 AM
  */
 
-public class LowestCommonAncestorOfBinaryTree {
+class LowestCommonAncestorOfBinaryTree {
 
-  public TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {
+  private TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {
     if (root == null || root == p || root == q)
       return root;
 

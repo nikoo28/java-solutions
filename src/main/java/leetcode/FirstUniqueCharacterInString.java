@@ -4,7 +4,7 @@ package leetcode;
  * Created by nikoo28 on 12/17/17 9:01 PM
  */
 
-public class FirstUniqueCharacterInString {
+class FirstUniqueCharacterInString {
 
   public int firstUniqChar(String s) {
 

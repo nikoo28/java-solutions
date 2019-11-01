@@ -6,7 +6,7 @@ import java.util.HashMap;
  * Created by nikoo28 on 9/22/18 5:17 PM
  */
 
-public class FindAnagramMappings {
+class FindAnagramMappings {
 
   public int[] anagramMappings(int[] A, int[] B) {
 

@@ -4,7 +4,7 @@ package leetcode.hard;
  * Created by nikoo28 on 7/20/19 12:26 AM
  */
 
-public class SlidingWindowMaximum {
+class SlidingWindowMaximum {
 
   public int[] maxSlidingWindow(int[] nums, int k) {
 

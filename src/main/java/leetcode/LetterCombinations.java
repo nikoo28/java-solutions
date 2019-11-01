@@ -7,7 +7,7 @@ import java.util.List;
  * Created by nikoo28 on 7/18/19 3:21 AM
  */
 
-public class LetterCombinations {
+class LetterCombinations {
 
   public static List<String> letterCombinations(String digits) {
     String[] digitletter = {"","","abc","def","ghi","jkl","mno","pqrs","tuv","wxyz"};
@@ -22,7 +22,7 @@ public class LetterCombinations {
     return result;
   }
 
-  public static List<String> combine(String digit, List<String> l) {
+  private static List<String> combine(String digit, List<String> l) {
     List<String> result = new ArrayList<>();
 
     for (int i=0; i<digit.length(); i++)

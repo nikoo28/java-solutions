@@ -6,7 +6,7 @@ import java.util.Stack;
  * Created by nikoo28 on 12/16/17 4:30 PM
  */
 
-public class BaseballGame {
+class BaseballGame {
 
   public int calPoints(String[] ops) {
 
