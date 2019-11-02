@@ -1,4 +1,6 @@
-package leetcode;
+package leetcode.medium;
+
+import leetcode.DoubleListNode;
 
 import java.util.*;
 
@@ -73,7 +75,7 @@ class LRUCache {
   private Map<Integer, DoubleListNode> keyAddressMap;
   private int maxCapacity;
 
-  private LRUCache(int capacity) {
+  LRUCache(int capacity) {
     keyAddressMap = new HashMap<>(capacity);
     maxCapacity = capacity;
     head = new DoubleListNode();
@@ -84,7 +86,7 @@ class LRUCache {
     tail.prev = head;
   }
 
-  private int get(int key) {
+  int get(int key) {
 
     if (!keyAddressMap.containsKey(key))
       return -1;
@@ -99,7 +101,7 @@ class LRUCache {
     addToHead(node);
   }
 
-  private void put(int key, int value) {
+  void put(int key, int value) {
 
     if (keyAddressMap.containsKey(key)) {
       DoubleListNode node = keyAddressMap.get(key);
@@ -138,29 +140,4 @@ class LRUCache {
     prevNode.next = nextNode;
     nextNode.prev = prevNode;
   }
-
-  public static void main(String[] args) {
-
-    LRUCache cache = new LRUCache(2 /* capacity */);
-
-//    cache.get(2);
-//    cache.put(2,6);
-//    cache.get(1);
-//    cache.put(1,5);
-//    cache.put(1,2);
-//    cache.get(1);
-//    cache.get(2);
-
-    cache.put(1, 1);
-    cache.put(2, 2);
-    cache.get(1);       // returns 1
-    cache.put(3, 3);    // evicts key 2
-    cache.get(2);       // returns -1 (not found)
-    cache.put(4, 4);    // evicts key 1
-    cache.get(1);       // returns -1 (not found)
-    cache.get(3);       // returns 3
-    cache.get(4);       // returns 4
-
-  }
-
 }
