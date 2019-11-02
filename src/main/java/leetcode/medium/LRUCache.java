@@ -72,26 +72,29 @@ class LRUCache {
 
   private DoubleListNode head;
   private DoubleListNode tail;
-  private Map<Integer, DoubleListNode> keyAddressMap;
+
+  private Map<Integer, DoubleListNode> keyNodeAddressMap;
   private int maxCapacity;
 
   LRUCache(int capacity) {
-    keyAddressMap = new HashMap<>(capacity);
-    maxCapacity = capacity;
     head = new DoubleListNode();
-    head.prev = null;
     tail = new DoubleListNode();
-    tail.next = null;
+
+    head.prev = null;
     head.next = tail;
+
+    tail.next = null;
     tail.prev = head;
+
+    keyNodeAddressMap = new HashMap<>(capacity);
+    maxCapacity = capacity;
   }
 
   int get(int key) {
-
-    if (!keyAddressMap.containsKey(key))
+    if (!keyNodeAddressMap.containsKey(key))
       return -1;
 
-    DoubleListNode node = keyAddressMap.get(key);
+    DoubleListNode node = keyNodeAddressMap.get(key);
     moveToHead(node);
     return node.val;
   }
@@ -102,9 +105,8 @@ class LRUCache {
   }
 
   void put(int key, int value) {
-
-    if (keyAddressMap.containsKey(key)) {
-      DoubleListNode node = keyAddressMap.get(key);
+    if (keyNodeAddressMap.containsKey(key)) {
+      DoubleListNode node = keyNodeAddressMap.get(key);
       node.val = value;
       moveToHead(node);
       return;
@@ -114,17 +116,16 @@ class LRUCache {
     node.key = key;
     node.val = value;
 
-    keyAddressMap.put(key, node);
+    keyNodeAddressMap.put(key, node);
     addToHead(node);
 
-    if (keyAddressMap.size() > maxCapacity) {
-      keyAddressMap.remove(tail.prev.key);
+    if (keyNodeAddressMap.size() > maxCapacity) {
+      keyNodeAddressMap.remove(tail.prev.key);
       removeNode(tail.prev);
     }
   }
 
   private void addToHead(DoubleListNode node) {
-
     node.prev = head;
     node.next = head.next;
 
@@ -133,8 +134,6 @@ class LRUCache {
   }
 
   private void removeNode(DoubleListNode node) {
-
-    // If middle node
     DoubleListNode prevNode = node.prev;
     DoubleListNode nextNode = node.next;
     prevNode.next = nextNode;
