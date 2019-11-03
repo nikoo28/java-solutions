@@ -9,7 +9,7 @@ import java.util.List;
 
 class SpiralMatrix {
 
-  private List<Integer> spiralOrder(int[][] matrix) {
+  List<Integer> spiralOrder(int[][] matrix) {
 
     List<Integer> result = new ArrayList<>();
 
@@ -64,22 +64,4 @@ class SpiralMatrix {
 
     return spiral;
   }
-
-  public static void main(String[] args) {
-
-    SpiralMatrix spiralMatrix = new SpiralMatrix();
-
-    int[][] matrix = {{1,2,3},{4,5,6},{7,8,9}};
-    System.out.println(spiralMatrix.spiralOrder(matrix));
-
-    matrix = new int[][]{{1,2,3,4},{5,6,7,8},{9,10,11,12}};
-    System.out.println(spiralMatrix.spiralOrder(matrix));
-
-    matrix = new int[][]{{1,2,3,4}};
-    System.out.println(spiralMatrix.spiralOrder(matrix));
-
-    matrix = new int[][]{{1,2,3,4}, {5,6,7,8}};
-    System.out.println(spiralMatrix.spiralOrder(matrix));
-  }
-
 }
