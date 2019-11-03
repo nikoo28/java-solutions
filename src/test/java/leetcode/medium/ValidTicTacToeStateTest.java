@@ -10,7 +10,33 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class ValidTicTacToeStateTest {
 
+  ValidTicTacToeState validTicTacToeState = new ValidTicTacToeState();
+
   @Test
-  void validTicTacToe() {
+  void validTicTacToe1() {
+    String[] board = {"O  ", "   ", "   "};
+
+    assertFalse(validTicTacToeState.validTicTacToe(board));
+  }
+
+  @Test
+  void validTicTacToe2() {
+    String[] board = {"XOX", " X ", "   "};
+
+    assertFalse(validTicTacToeState.validTicTacToe(board));
+  }
+
+  @Test
+  void validTicTacToe3() {
+    String[] board = {"XXX", "   ", "OOO"};
+
+    assertFalse(validTicTacToeState.validTicTacToe(board));
+  }
+
+  @Test
+  void validTicTacToe4() {
+    String[] board = {"XOX", "O O", "XOX"};
+
+    assertTrue(validTicTacToeState.validTicTacToe(board));
   }
 }
