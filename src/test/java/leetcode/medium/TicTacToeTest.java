@@ -14,9 +14,9 @@ class TicTacToeTest {
   void testGrid2() {
     TicTacToe ticTacToe = new TicTacToe(2);
 
-    assertEquals(0, ticTacToe.move(0,1,1));
-    assertEquals(0, ticTacToe.move(1,1,2));
-    assertEquals(1, ticTacToe.move(1,0,1));
+    assertEquals(0, ticTacToe.move(0, 1, 1));
+    assertEquals(0, ticTacToe.move(1, 1, 2));
+    assertEquals(1, ticTacToe.move(1, 0, 1));
   }
 
   @Test
