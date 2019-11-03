@@ -1,4 +1,4 @@
-package leetcode;
+package leetcode.easy;
 
 import java.util.StringJoiner;
 
@@ -7,7 +7,7 @@ import java.util.StringJoiner;
  */
 class ReverseWordsInAString3 {
 
-  public static String reverseWords(String s) {
+  String reverseWords(String s) {
 
     String[] splits = s.split(" ");
     StringJoiner outputString = new StringJoiner(" ");

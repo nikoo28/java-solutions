@@ -10,7 +10,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class TrappingRainWaterIITest {
 
-  TrappingRainWaterII trappingRainWaterII = new TrappingRainWaterII();
+  private TrappingRainWaterII trappingRainWaterII = new TrappingRainWaterII();
 
   @Test
   void testTrapRainWater1() {
