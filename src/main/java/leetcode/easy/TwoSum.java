@@ -8,33 +8,17 @@ import java.util.*;
 
 class TwoSum {
 
-  public int[] twoSum(int[] nums, int target) {
+  int[] twoSum(int[] nums, int target) {
 
-    Map<Integer, Integer> numIndexMap = new HashMap<>();
-
-    int idx = 0;
-    for (int num : nums)
-      numIndexMap.put(idx++, num);
-
+    Map<Integer, Integer> map = new HashMap<>();
     for (int i = 0; i < nums.length; i++) {
-      numIndexMap.remove(i);
-      if (numIndexMap.containsValue(target - nums[i])) {
-        int[] a = new int[2];
-        a[0] = i;
-        for (int j = 0; j < nums.length; j++) {
-          if (j == i)
-            continue;
-
-          if (nums[j] + nums[i] == target) {
-            a[1] = j;
-            return a;
-          }
-        }
+      int complement = target - nums[i];
+      if (map.containsKey(complement)) {
+        return new int[]{map.get(complement), i};
       }
-      numIndexMap.put(i, nums[i]);
+      map.put(nums[i], i);
     }
-
-    return null;
+    throw new IllegalArgumentException("No two sum solution");
   }
 
 }
