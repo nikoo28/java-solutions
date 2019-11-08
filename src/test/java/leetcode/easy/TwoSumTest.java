@@ -18,6 +18,6 @@ class TwoSumTest {
     int target = 9;
 
     int[] res = twoSum.twoSum(nums, target);
-    assertEquals(9, res[0] + res[1]);
+    assertEquals(9, nums[res[0]] + nums[res[1]]);
   }
 }
