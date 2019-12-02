@@ -6,7 +6,7 @@ package leetcode.medium;
 
 class ReverseWordsInAString {
 
-  private String reverseWords(String s) {
+  String reverseWords(String s) {
 
     String[] words = s.split("\\s+");
     StringBuilder reversed = new StringBuilder();
@@ -18,13 +18,4 @@ class ReverseWordsInAString {
 
     return reversed.toString().trim();
   }
-
-  public static void main(String[] args) {
-    ReverseWordsInAString reverseWordsInAString = new ReverseWordsInAString();
-
-    System.out.println(reverseWordsInAString.reverseWords("  hello world!  "));
-    System.out.println(reverseWordsInAString.reverseWords("a good   example"));
-    System.out.println(reverseWordsInAString.reverseWords("the sky is blue"));
-  }
-
 }

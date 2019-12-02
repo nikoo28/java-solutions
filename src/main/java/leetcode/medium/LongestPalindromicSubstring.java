@@ -6,7 +6,7 @@ package leetcode.medium;
 
 class LongestPalindromicSubstring {
 
-  public String longestPalindrome(String str) {
+  String longestPalindrome(String str) {
 
     if (str.length() <= 1)
       return str;

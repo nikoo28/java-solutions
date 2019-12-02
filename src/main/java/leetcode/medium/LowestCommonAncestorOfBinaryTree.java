@@ -1,4 +1,6 @@
-package leetcode;
+package leetcode.medium;
+
+import leetcode.TreeNode;
 
 /**
  * Created by nikoo28 on 12/19/17 12:55 AM
@@ -6,7 +8,7 @@ package leetcode;
 
 class LowestCommonAncestorOfBinaryTree {
 
-  private TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {
+  TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {
     if (root == null || root == p || root == q)
       return root;
 
@@ -21,5 +23,4 @@ class LowestCommonAncestorOfBinaryTree {
     else
       return right;
   }
-
 }

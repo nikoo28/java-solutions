@@ -1,4 +1,6 @@
-package leetcode;
+package leetcode.medium;
+
+import leetcode.DoubleListNode;
 
 import java.util.*;
 
@@ -70,26 +72,29 @@ class LRUCache {
 
   private DoubleListNode head;
   private DoubleListNode tail;
-  private Map<Integer, DoubleListNode> keyAddressMap;
+
+  private Map<Integer, DoubleListNode> keyNodeAddressMap;
   private int maxCapacity;
 
-  private LRUCache(int capacity) {
-    keyAddressMap = new HashMap<>(capacity);
-    maxCapacity = capacity;
+  LRUCache(int capacity) {
     head = new DoubleListNode();
-    head.prev = null;
     tail = new DoubleListNode();
-    tail.next = null;
+
+    head.prev = null;
     head.next = tail;
+
+    tail.next = null;
     tail.prev = head;
+
+    keyNodeAddressMap = new HashMap<>(capacity);
+    maxCapacity = capacity;
   }
 
-  private int get(int key) {
-
-    if (!keyAddressMap.containsKey(key))
+  int get(int key) {
+    if (!keyNodeAddressMap.containsKey(key))
       return -1;
 
-    DoubleListNode node = keyAddressMap.get(key);
+    DoubleListNode node = keyNodeAddressMap.get(key);
     moveToHead(node);
     return node.val;
   }
@@ -99,10 +104,9 @@ class LRUCache {
     addToHead(node);
   }
 
-  private void put(int key, int value) {
-
-    if (keyAddressMap.containsKey(key)) {
-      DoubleListNode node = keyAddressMap.get(key);
+  void put(int key, int value) {
+    if (keyNodeAddressMap.containsKey(key)) {
+      DoubleListNode node = keyNodeAddressMap.get(key);
       node.val = value;
       moveToHead(node);
       return;
@@ -112,17 +116,16 @@ class LRUCache {
     node.key = key;
     node.val = value;
 
-    keyAddressMap.put(key, node);
+    keyNodeAddressMap.put(key, node);
     addToHead(node);
 
-    if (keyAddressMap.size() > maxCapacity) {
-      keyAddressMap.remove(tail.prev.key);
+    if (keyNodeAddressMap.size() > maxCapacity) {
+      keyNodeAddressMap.remove(tail.prev.key);
       removeNode(tail.prev);
     }
   }
 
   private void addToHead(DoubleListNode node) {
-
     node.prev = head;
     node.next = head.next;
 
@@ -131,36 +134,9 @@ class LRUCache {
   }
 
   private void removeNode(DoubleListNode node) {
-
-    // If middle node
     DoubleListNode prevNode = node.prev;
     DoubleListNode nextNode = node.next;
     prevNode.next = nextNode;
     nextNode.prev = prevNode;
   }
-
-  public static void main(String[] args) {
-
-    LRUCache cache = new LRUCache(2 /* capacity */);
-
-//    cache.get(2);
-//    cache.put(2,6);
-//    cache.get(1);
-//    cache.put(1,5);
-//    cache.put(1,2);
-//    cache.get(1);
-//    cache.get(2);
-
-    cache.put(1, 1);
-    cache.put(2, 2);
-    cache.get(1);       // returns 1
-    cache.put(3, 3);    // evicts key 2
-    cache.get(2);       // returns -1 (not found)
-    cache.put(4, 4);    // evicts key 1
-    cache.get(1);       // returns -1 (not found)
-    cache.get(3);       // returns 3
-    cache.get(4);       // returns 4
-
-  }
-
 }

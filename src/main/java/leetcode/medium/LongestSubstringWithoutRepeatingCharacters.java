@@ -1,4 +1,4 @@
-package leetcode;
+package leetcode.medium;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -9,7 +9,7 @@ import java.util.List;
 
 class LongestSubstringWithoutRepeatingCharacters {
 
-  public int lengthOfLongestSubstring(String s) {
+  int lengthOfLongestSubstring(String s) {
 
     if (s == null || s.length() == 0)
       return 0;
