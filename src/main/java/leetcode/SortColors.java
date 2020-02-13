@@ -12,7 +12,7 @@ class SortColors {
     int mid = 0;
     int end = nums.length - 1;
 
-    int temp = 0;
+    int temp;
     while (mid <= end) {
 
       switch (nums[mid]) {

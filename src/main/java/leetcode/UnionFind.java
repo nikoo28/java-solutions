@@ -6,13 +6,11 @@ package leetcode;
 
 class UnionFind {
   private int[] father;
-  private int m;
-  private int n;
   int count = 0;
 
   UnionFind(char[][] grid) {
-    m = grid.length;
-    n = grid[0].length;
+    int m = grid.length;
+    int n = grid[0].length;
     father = new int[m * n];
     for (int i = 0; i < m; i++) {
       for (int j = 0; j < n; j++) {

@@ -10,7 +10,7 @@ class JewelsAndStones {
 
   public int numJewelsInStones(String J, String S) {
 
-    HashSet Jset = new HashSet();
+    HashSet<Character> Jset = new HashSet<>();
     for (char j : J.toCharArray())
       Jset.add(j);
 
