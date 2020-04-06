@@ -13,7 +13,7 @@ class Problem1 {
     long t = sc.nextLong();
     for (long i = 0; i < t; i++) {
       long n = sc.nextLong();
-      long a = 0, b = 0, d = 0;
+      long a, b, d;
 
       // Here a, b and d are the count of numbers divisible by 3, 5 and 15 respectively
       a = (n - 1) / 3;

@@ -14,8 +14,8 @@ class MergeTwoSortedLists {
     if (l2 == null)
       return l1;
 
-    ListNode pointer = null;
-    ListNode answer = null;
+    ListNode pointer;
+    ListNode answer;
 
     if(l1.val < l2.val) {
       answer = new ListNode(l1.val);
