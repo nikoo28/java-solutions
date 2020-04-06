@@ -7,13 +7,13 @@ import java.util.Stack;
  */
 class Brackets {
 
-  public static int bracket_match(String bracket_string) {
+  public static int bracketMatch(String bracketString) {
 
     Stack<Character> chars = new Stack<>();
 
-    for (int i = 0; i < bracket_string.length(); i++) {
+    for (int i = 0; i < bracketString.length(); i++) {
 
-      if (bracket_string.charAt(i) == '(')
+      if (bracketString.charAt(i) == '(')
         chars.push('(');
 
       else

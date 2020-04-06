@@ -1,8 +1,7 @@
 package leetcode.medium;
 
-import leetcode.ListNode;
-
 import java.util.Stack;
+import leetcode.ListNode;
 
 /**
  * Created by nikoo28 on 2019-08-24 02:08

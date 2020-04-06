@@ -8,7 +8,7 @@ import java.util.Set;
 /**
  * @author nikoo28 on 9/15/17
  */
-class ASCIIDistance {
+class AsciiDistance {
 
   private int distance(String str1, String str2) {
 
@@ -47,7 +47,7 @@ class ASCIIDistance {
 
   public static void main(String[] args) {
 
-    ASCIIDistance asciiDistance = new ASCIIDistance();
+    AsciiDistance asciiDistance = new AsciiDistance();
     System.out.println(asciiDistance.distance("thought", "sloughs"));
 
   }

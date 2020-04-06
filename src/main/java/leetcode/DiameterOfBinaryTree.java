@@ -19,10 +19,10 @@ class DiameterOfBinaryTree {
     if (root == null)
       return 0;
 
-    int L = depth(root.left);
-    int R = depth(root.right);
-    ans = Math.max(ans, L + R + 1);
-    return Math.max(L, R) + 1;
+    int left = depth(root.left);
+    int right = depth(root.right);
+    ans = Math.max(ans, left + right + 1);
+    return Math.max(left, right) + 1;
   }
 
 }

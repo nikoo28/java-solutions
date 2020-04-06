@@ -16,8 +16,7 @@ class ArrayNesting {
           start = nums[start];
           count++;
           visited[start] = true;
-        }
-        while (start != nums[i]);
+        } while (start != nums[i]);
         res = Math.max(res, count);
       }
     }

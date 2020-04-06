@@ -6,11 +6,11 @@ package codility.painless;
 
 class BinaryGap {
 
-  int solution(int N) {
+  int solution(int n) {
     // write your code in Java SE 8
 
-    String binaryString = Integer.toBinaryString(N);
-//    System.out.println(binaryString);
+    String binaryString = Integer.toBinaryString(n);
+    // System.out.println(binaryString);
 
     int largestGap = 0;
     for (int i = 1; i < binaryString.length(); i++) {
@@ -25,7 +25,8 @@ class BinaryGap {
         }
       }
 
-      if(gap > largestGap) largestGap = gap;
+      if (gap > largestGap)
+        largestGap = gap;
     }
 
     return largestGap;

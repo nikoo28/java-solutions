@@ -1,13 +1,13 @@
 package leetcode.easy;
 
-import leetcode.TreeNode;
-
 import java.util.*;
+
+import leetcode.TreeNode;
 
 /**
  * @author nikoo28 on 9/17/17
  */
-class ConvertBSTToGreaterTree {
+class ConvertBstToGreaterTree {
 
   public TreeNode convertBST(TreeNode root) {
 

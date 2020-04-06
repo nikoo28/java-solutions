@@ -5,20 +5,20 @@ package leetcode;
  */
 class AlmostPalindromes {
 
-    public static int almost_palindromes(String str) {
+  public static int almost_palindromes(String str) {
 
-      StringBuilder sb = new StringBuilder(str);
-      String reversed = sb.reverse().toString();
+    StringBuilder sb = new StringBuilder(str);
+    String reversed = sb.reverse().toString();
 
-      int count = 0;
+    int count = 0;
 
-      for (int i = 0; i < str.length(); i++) {
-        if (str.charAt(i) != reversed.charAt(i))
-          count++;
-      }
-
-      return count;
-
+    for (int i = 0; i < str.length(); i++) {
+      if (str.charAt(i) != reversed.charAt(i))
+        count++;
     }
+
+    return count;
+
+  }
 
 }
