@@ -1,10 +1,10 @@
 package leetcode.medium;
 
-import leetcode.TreeNode;
-
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Queue;
+
+import leetcode.TreeNode;
 
 /**
  * Created by nikoo28 on 12/19/17 1:01 AM

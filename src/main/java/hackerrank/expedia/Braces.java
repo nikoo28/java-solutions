@@ -16,8 +16,7 @@ class Braces {
     for (String value : values) {
       if (isValid(value)) {
         result[idx] = "YES";
-      }
-      else
+      } else
         result[idx] = "NO";
 
       idx++;

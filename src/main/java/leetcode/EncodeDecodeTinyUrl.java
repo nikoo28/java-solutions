@@ -7,7 +7,7 @@ import java.util.Map;
  * Created by nikoo28 on 2019-07-20 17:36
  */
 
-class EncodeDecodeTinyURL {
+class EncodeDecodeTinyUrl {
 
   private Map<Integer, String> map = new HashMap<>();
   private int i = 0;

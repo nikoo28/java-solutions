@@ -6,7 +6,7 @@ package leetcode;
 
 class ConvertSortedArrayToBinarySearchTree {
 
-  public TreeNode sortedArrayToBST(int[] nums) {
+  public TreeNode sortedArrayToBst(int[] nums) {
 
     if (nums.length == 0)
       return null;

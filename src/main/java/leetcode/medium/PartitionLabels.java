@@ -4,23 +4,24 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Created by nikoo28 on 2019-07-20 22:41
+ * Created by nikoo28 on 2019-07-20 22:41.
  */
 
 class PartitionLabels {
 
-  private List<Integer> partitionLabels(String S) {
+  private List<Integer> partitionLabels(String str) {
 
     List<Integer> partitions = new ArrayList<>();
 
-    for (int i = 0; i < S.length(); ) {
+    for (int i = 0; i < str.length(); ) {
 
       int startIndex = i;
-      int endIndex = S.lastIndexOf(S.charAt(startIndex));
+      int endIndex = str.lastIndexOf(str.charAt(startIndex));
 
       for (int s = startIndex + 1; s <= endIndex - 1; s++) {
-        if (S.lastIndexOf(S.charAt(s)) > endIndex)
-          endIndex = S.lastIndexOf(S.charAt(s));
+        if (str.lastIndexOf(str.charAt(s)) > endIndex) {
+          endIndex = str.lastIndexOf(str.charAt(s));
+        }
       }
 
       partitions.add(endIndex - startIndex + 1);
