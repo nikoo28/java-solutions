@@ -9,7 +9,7 @@ Solutions in JAVA for some coding platforms
 
 ## Array
 - [Single non-repeating number](https://studyalgorithms.com/array/single-non-repeating-number/)
-- [Maximum sum contiguous sub-array)[https://studyalgorithms.com/array/maximum-sum-contiguous-sub-array/]
+- [Maximum sum contiguous sub-array](https://studyalgorithms.com/array/maximum-sum-contiguous-sub-array/)
 
 ## Linked Lists
 - [Merge two sorted Linked Lists](https://studyalgorithms.com/link_list/merge-two-sorted-linked-lists/)
