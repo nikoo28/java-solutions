@@ -10,7 +10,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class ContainsDuplicateTest {
 
-  private ContainsDuplicate containsDuplicate = new ContainsDuplicate();
+  ContainsDuplicate containsDuplicate = new ContainsDuplicate();
 
   @Test
   void testContainsDuplicate1() {
