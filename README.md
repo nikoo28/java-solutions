@@ -13,3 +13,6 @@ Solutions in JAVA for some coding platforms
 
 ## Linked Lists
 - [Merge two sorted Linked Lists](https://studyalgorithms.com/link_list/merge-two-sorted-linked-lists/)
+
+## Trees
+- [Diameter of a Binary Tree](https://studyalgorithms.com/tree/diameter-of-a-binary-tree/)
