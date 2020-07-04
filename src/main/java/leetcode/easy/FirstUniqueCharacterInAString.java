@@ -12,6 +12,7 @@ public class FirstUniqueCharacterInAString {
   public int firstUniqueChar(String str) {
 
     int index = -1;
+    str = str.toLowerCase();
 
     Map<Character, Integer> charFreqMap = new HashMap<>();
 

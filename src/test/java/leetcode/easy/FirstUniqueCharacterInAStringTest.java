@@ -35,4 +35,16 @@ class FirstUniqueCharacterInAStringTest {
     String str = "leetcode";
     assertEquals(0, firstUniqueCharacterInAString.firstUniqueChar(str));
   }
+
+  @Test
+  void testFirstUniqueChar5() {
+    String str = "lotsOfLove";
+    assertEquals(2, firstUniqueCharacterInAString.firstUniqueChar(str));
+  }
+
+  @Test
+  void testFirstUniqueChar6() {
+    String str = "fourByFourFrog";
+    assertEquals(4, firstUniqueCharacterInAString.firstUniqueChar(str));
+  }
 }
