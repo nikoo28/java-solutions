@@ -6,6 +6,7 @@ Solutions in JAVA for some coding platforms
 # Code Explanations
 ## String
 - [Longest palindromic substring](https://studyalgorithms.com/string/longest-palindromic-substring/)
+- [First unique character in a string](https://studyalgorithms.com/string/first-unique-character-in-a-string/)
 
 ## Array
 - [Single non-repeating number](https://studyalgorithms.com/array/single-non-repeating-number/)
