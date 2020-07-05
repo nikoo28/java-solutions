@@ -6,17 +6,30 @@ package leetcode.easy;
 
 class ValidAnagram {
 
-  public boolean isAnagram(String s, String t) {
+  public boolean isAnagram(String str1, String str2) {
 
-    if (s.length() != t.length())
-      return false;
+    // Convert both to lowercase to ignore case match
+    str1 = str1.toLowerCase();
+    str2 = str2.toLowerCase();
 
+    // Strip of all the white spaces
+    str1 = str1.replace(" ", "");
+    str2 = str2.replace(" ", "");
+
+    // Initialize the bucket array
     int[] counts = new int[26];
-    for (int i = 0; i < s.length(); i++) {
-      counts[s.charAt(i) - 'a']++;
-      counts[t.charAt(i) - 'a']--;
+
+    // Fill the buckets
+    for (int i = 0; i < str1.length(); i++) {
+      counts[str1.charAt(i) - 'a']++;
     }
 
+    // Empty the buckets
+    for (int i = 0; i < str2.length(); i++) {
+      counts[str2.charAt(i) - 'a']--;
+    }
+
+    // Check if all buckets are empty
     for (int count : counts) {
       if (count != 0)
         return false;

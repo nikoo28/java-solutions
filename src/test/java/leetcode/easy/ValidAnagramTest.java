@@ -21,4 +21,19 @@ class ValidAnagramTest {
   void testIsAnagram2() {
     assertEquals(true, validAnagram.isAnagram("anagram", "nagaram"));
   }
+
+  @Test
+  void testIsAnagram3() {
+    assertEquals(false, validAnagram.isAnagram("mississippi", "mips"));
+  }
+
+  @Test
+  void testIsAnagram4() {
+    assertEquals(true, validAnagram.isAnagram("silent", "listen"));
+  }
+
+  @Test
+  void testIsAnagram5() {
+    assertEquals(true, validAnagram.isAnagram("a decimal point", "im a dot in place"));
+  }
 }
