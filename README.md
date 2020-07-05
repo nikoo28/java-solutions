@@ -1,6 +1,6 @@
 ![Main Workflow](https://github.com/nikoo28/java-solutions/workflows/Main%20Workflow/badge.svg)
 
-# Solutions in JAVA for some coding platforms
+# Solutions for some coding platforms
 - [Leetcode](src/main/java/leetcode/)
 - [Hackerrank](src/main/java/hackerrank/)
 - [Codility](src/main/java/codility/)
