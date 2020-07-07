@@ -4,6 +4,8 @@
 | [Youtube](https://www.youtube.com/channel/UCT-S2ngqEBoYCM5UKuNeELg)  | [Facebook](https://www.facebook.com/studyalgos)  | [Twitter](https://twitter.com/studyalgorithms)  | [Tumblr](https://studyalgos.tumblr.com/)  | [RSS](https://studyalgorithms.com/feed/)  |
 |:-:|:-:|:-:|:-:|:-:|
 
+You can also [subscribe via email](http://eepurl.com/g9Dadv).
+
 # How to use this repo
 ## Install softwares
 - Install OpenJDK
