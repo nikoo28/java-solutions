@@ -19,10 +19,10 @@ You can also [subscribe via email](http://eepurl.com/g9Dadv).
 - Build the project using `mvn clean install`.
 - Startup IntelliJ and choose to import this project from your Explorer/Finder window.
 - Start making changes/using it.
-```bash
+```console
 [user@machine ~] git clone https://github.com/nikoo28/java-solutions.git
 [user@machine ~] cd java-solutions
-[user@machine ~] mvn clean install
+[user@machine ~/java-solutions] mvn clean install
 [INFO] Scanning for projects...
 [INFO] 
 [INFO] ----------< com.studyalgorithms.javasolutions:java-solutions >----------
@@ -37,7 +37,7 @@ You can also [subscribe via email](http://eepurl.com/g9Dadv).
 [INFO] Total time:  7.790 s
 [INFO] Finished at: 2020-07-06T18:37:35-07:00
 [INFO] ------------------------------------------------------------------------
-[user@machine ~]
+[user@machine ~/java-solutions]
 ```
 
 # Contribute
