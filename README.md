@@ -68,3 +68,6 @@ request and approve it if it looks good.
 
 ## Trees
 - [Diameter of a Binary Tree](https://studyalgorithms.com/tree/diameter-of-a-binary-tree/)
+
+## Theory
+- [Algorithmic Paradigms: Brute Force](https://studyalgorithms.com/theory/algorithmic-paradigms-brute-force/)
