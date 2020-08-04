@@ -71,3 +71,6 @@ request and approve it if it looks good.
 
 ## Theory
 - [Algorithmic Paradigms: Brute Force](https://studyalgorithms.com/theory/algorithmic-paradigms-brute-force/)
+- [Algorithmic Paradigms: Divide and Conquer](https://studyalgorithms.com/theory/algorithmic-paradigms-divide-and-conquer/)
+- [Algorithmic Paradigms: Greedy](https://studyalgorithms.com/theory/algorithmic-paradigms-greedy-algorithms/)
+- [Algorithmic Paradigms: Dynamic Programming](https://studyalgorithms.com/theory/algorithmic-paradigms-dynamic-programming/)
