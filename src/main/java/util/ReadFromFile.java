@@ -18,7 +18,6 @@ public class ReadFromFile {
 
   static boolean binarySearchAlgorithm2(int[] arr, int numberToFind) {
     int left = 0, right = arr.length - 1;
-
     while (left <= right) {
       int mid = left + (right - left) / 2;
       if (arr[mid] == numberToFind) return true;
