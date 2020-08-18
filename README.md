@@ -74,3 +74,5 @@ request and approve it if it looks good.
 - [Algorithmic Paradigms: Divide and Conquer](https://studyalgorithms.com/theory/algorithmic-paradigms-divide-and-conquer/)
 - [Algorithmic Paradigms: Greedy](https://studyalgorithms.com/theory/algorithmic-paradigms-greedy-algorithms/)
 - [Algorithmic Paradigms: Dynamic Programming](https://studyalgorithms.com/theory/algorithmic-paradigms-dynamic-programming/)
+- [Course on Algorithmic Paradigms](https://studyalgorithms.com/theory/course-on-algorithmic-paradigms/)
+- [What is the Time Complexity of an Algorithm?](https://studyalgorithms.com/theory/what-is-the-time-complexity-of-an-algorithm/)
