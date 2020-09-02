@@ -1,4 +1,4 @@
-package hackerrank.sorting;
+package hackerrank.algorithms.sorting;
 
 import java.util.Scanner;
 
