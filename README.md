@@ -53,6 +53,9 @@ request and approve it if it looks good.
 # Full list of questions
 [https://studyalgorithms.com/site-map/](https://studyalgorithms.com/site-map/)
 
+# Basics
+- [Insertion sort](https://studyalgorithms.com/array/insertion-sort/)
+
 # Code Explanations
 ## String
 - [Longest palindromic substring](https://studyalgorithms.com/string/longest-palindromic-substring/)
@@ -70,7 +73,7 @@ request and approve it if it looks good.
 ## Trees
 - [Diameter of a Binary Tree](https://studyalgorithms.com/tree/diameter-of-a-binary-tree/)
 
-## Theory
+# Theory
 - [Algorithmic Paradigms: Brute Force](https://studyalgorithms.com/theory/algorithmic-paradigms-brute-force/)
 - [Algorithmic Paradigms: Divide and Conquer](https://studyalgorithms.com/theory/algorithmic-paradigms-divide-and-conquer/)
 - [Algorithmic Paradigms: Greedy](https://studyalgorithms.com/theory/algorithmic-paradigms-greedy-algorithms/)
