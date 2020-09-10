@@ -42,8 +42,8 @@ You can also [subscribe via email](http://eepurl.com/g9Dadv).
 
 # Contribute
 Please contribute to this repository to help it make better. Any change like new questions you want to see,
-code improvements, doc improvements etc.is  very welcome. Just send me a pull request and I will review the
-request and approve it if it looks good. 
+code improvements, doc improvements etc. is very welcome. Just send me a pull request and I will review the
+request and approve it, if it looks good. 
 
 # Solutions for some coding platforms
 - [Leetcode](src/main/java/leetcode/)
@@ -74,13 +74,18 @@ request and approve it if it looks good.
 - [Diameter of a Binary Tree](https://studyalgorithms.com/tree/diameter-of-a-binary-tree/)
 
 # Theory
+### Algorithmic Paradigms
 - [Algorithmic Paradigms: Brute Force](https://studyalgorithms.com/theory/algorithmic-paradigms-brute-force/)
 - [Algorithmic Paradigms: Divide and Conquer](https://studyalgorithms.com/theory/algorithmic-paradigms-divide-and-conquer/)
 - [Algorithmic Paradigms: Greedy](https://studyalgorithms.com/theory/algorithmic-paradigms-greedy-algorithms/)
 - [Algorithmic Paradigms: Dynamic Programming](https://studyalgorithms.com/theory/algorithmic-paradigms-dynamic-programming/)
 - [Algorithmic Paradigms: Recursion](https://studyalgorithms.com/theory/algorithmic-paradigms-recursion/)
+
+### Analysis of Algorithms
 - [What is the Time Complexity of an Algorithm?](https://studyalgorithms.com/theory/what-is-the-time-complexity-of-an-algorithm/)
 - [How do you compare 2 Algorithms?](https://studyalgorithms.com/theory/how-do-you-compare-two-algorithms/)
+- [What is the Big O notation?](https://studyalgorithms.com/theory/big-o-simplified/)
+- [What is the Rate of Growth of an Algorithm?](https://studyalgorithms.com/theory/what-is-rate-of-growth-of-algorithm/)
 
 # Playlists
-- [Course on Algorithmic Paradigms](https://studyalgorithms.com/theory/course-on-algorithmic-paradigms/)
+- [Secrets of Algorithmic Paradigms](https://studyalgorithms.com/theory/course-on-algorithmic-paradigms/)
