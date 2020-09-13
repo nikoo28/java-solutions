@@ -89,3 +89,4 @@ request and approve it, if it looks good.
 
 # Playlists
 - [Secrets of Algorithmic Paradigms](https://studyalgorithms.com/theory/course-on-algorithmic-paradigms/)
+- [Analysis of Algorithms](https://www.youtube.com/playlist?list=PLFdAYMIVJQHO68niW2jJSvpW9MSiVRi37)
