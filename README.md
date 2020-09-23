@@ -1,7 +1,7 @@
 ![Main Workflow](https://github.com/nikoo28/java-solutions/workflows/Main%20Workflow/badge.svg)
 
 # Follow me on your favorite platform for latest updates on my video channel
-| [Youtube](https://www.youtube.com/channel/UCT-S2ngqEBoYCM5UKuNeELg)  | [Facebook](https://www.facebook.com/studyalgos)  | [Twitter](https://twitter.com/studyalgorithms)  | [Tumblr](https://studyalgos.tumblr.com/)  | [RSS](https://studyalgorithms.com/feed/)  |
+| [Youtube](https://www.youtube.com/c/StudyAlgorithms)  | [Facebook](https://www.facebook.com/studyalgos)  | [Twitter](https://twitter.com/studyalgorithms)  | [Tumblr](https://studyalgos.tumblr.com/)  | [RSS](https://studyalgorithms.com/feed/)  |
 |:-:|:-:|:-:|:-:|:-:|
 
 You can also [subscribe via email](http://eepurl.com/g9Dadv).
@@ -61,11 +61,12 @@ request and approve it, if it looks good.
 - [Longest palindromic substring](https://studyalgorithms.com/string/longest-palindromic-substring/)
 - [First unique character in a string](https://studyalgorithms.com/string/first-unique-character-in-a-string/)
 - [Valid anagram strings](https://studyalgorithms.com/string/valid-anagram-strings/)
-- [HackerRank: TwoCharacters](https://studyalgorithms.com/string/hackerrank-two-characters/)
+- [HackerRank: Two Characters](https://studyalgorithms.com/string/hackerrank-two-characters/)
 
 ## Array
 - [Single non-repeating number](https://studyalgorithms.com/array/single-non-repeating-number/)
 - [Maximum sum contiguous sub-array](https://studyalgorithms.com/array/maximum-sum-contiguous-sub-array/)
+- [HackerRank: Left Rotation](https://studyalgorithms.com/array/hackerrank-left-rotation/)
 
 ## Linked Lists
 - [Merge two sorted Linked Lists](https://studyalgorithms.com/link_list/merge-two-sorted-linked-lists/)
@@ -89,4 +90,4 @@ request and approve it, if it looks good.
 
 # Playlists
 - [Secrets of Algorithmic Paradigms](https://studyalgorithms.com/theory/course-on-algorithmic-paradigms/)
-- [Analysis of Algorithms](https://www.youtube.com/playlist?list=PLFdAYMIVJQHO68niW2jJSvpW9MSiVRi37)
+- [Analysis of Algorithms](https://studyalgorithms.com/theory/analysis-of-algorithms/)
