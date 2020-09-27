@@ -4,7 +4,6 @@ import java.util.Scanner;
 
 class InsertionSortPartOne {
 
-
   private static void insertIntoSorted(int[] ar) {
     int n = ar.length;
     int insert = ar[n - 1];
