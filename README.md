@@ -54,7 +54,9 @@ request and approve it, if it looks good.
 [https://studyalgorithms.com/site-map/](https://studyalgorithms.com/site-map/)
 
 # Basics
-- [Insertion sort](https://studyalgorithms.com/array/insertion-sort/)
+- [Insertion Sort](https://studyalgorithms.com/array/insertion-sort/)
+- [Bubble Sort](https://studyalgorithms.com/array/bubble-sort/)
+- [Selection Sort](https://studyalgorithms.com/array/selection-sort/)
 
 # Code Explanations
 ## String
@@ -67,6 +69,8 @@ request and approve it, if it looks good.
 - [Single non-repeating number](https://studyalgorithms.com/array/single-non-repeating-number/)
 - [Maximum sum contiguous sub-array](https://studyalgorithms.com/array/maximum-sum-contiguous-sub-array/)
 - [HackerRank: Left Rotation](https://studyalgorithms.com/array/hackerrank-left-rotation/)
+- [HackerRank: Equal Stacks](https://studyalgorithms.com/array/hackerrank---equal-stacks/)
+- [HackerRank: Missing Numbers](https://studyalgorithms.com/array/hackerrank---missing-numbers/)
 
 ## Linked Lists
 - [Merge two sorted Linked Lists](https://studyalgorithms.com/link_list/merge-two-sorted-linked-lists/)
