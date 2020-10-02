@@ -6,6 +6,23 @@
 
 You can also [subscribe via email](http://eepurl.com/g9Dadv).
 
+- [How to use this repo](#how-to-use-this-repo)
+  * [Install softwares](#install-softwares)
+  * [Setup Project](#setup-project)
+- [CONTRIBUTE](#contribute)
+- [Solutions for some coding platforms](#solutions-for-some-coding-platforms)
+- [Full list of questions](#full-list-of-questions)
+- [Basics](#basics)
+- [Code Explanations](#code-explanations)
+  * [String](#string)
+  * [Array](#array)
+  * [Linked Lists](#linked-lists)
+  * [Trees](#trees)
+- [Theory](#theory)
+    + [Algorithmic Paradigms](#algorithmic-paradigms)
+    + [Analysis of Algorithms](#analysis-of-algorithms)
+- [Playlists](#playlists)
+
 # How to use this repo
 ## Install softwares
 - Install OpenJDK
