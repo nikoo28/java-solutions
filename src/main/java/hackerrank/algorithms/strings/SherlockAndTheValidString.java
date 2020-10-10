@@ -36,7 +36,7 @@ public class SherlockAndTheValidString {
     // If first and last are same, then all frequencies are same
     if (first == last) return "YES";
 
-    // If first is 1, and all are same
+    // If first is 1, and all other characters have 1 frequency
     if (first == 1 && second == last) return "YES";
 
     // If all are same and last character has just 1 extra count
