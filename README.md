@@ -70,10 +70,12 @@ request and approve it, if it looks good.
 # Full list of questions
 [https://studyalgorithms.com/site-map/](https://studyalgorithms.com/site-map/)
 
-# Basics
+# Sorting Techniques
 - [Insertion Sort](https://studyalgorithms.com/array/insertion-sort/)
 - [Bubble Sort](https://studyalgorithms.com/array/bubble-sort/)
 - [Selection Sort](https://studyalgorithms.com/array/selection-sort/)
+- [Merge Sort](https://studyalgorithms.com/array/merge-sort/)
+- [Quick Sort](https://studyalgorithms.com/array/quick-sort/)
 
 # Code Explanations
 ## String
@@ -88,6 +90,7 @@ request and approve it, if it looks good.
 - [HackerRank: Left Rotation](https://studyalgorithms.com/array/hackerrank-left-rotation/)
 - [HackerRank: Equal Stacks](https://studyalgorithms.com/array/hackerrank---equal-stacks/)
 - [HackerRank: Missing Numbers](https://studyalgorithms.com/array/hackerrank---missing-numbers/)
+- [HackerRank: Pairs](https://studyalgorithms.com/array/hackerrank-pairs/)
 
 ## Linked Lists
 - [Merge two sorted Linked Lists](https://studyalgorithms.com/link_list/merge-two-sorted-linked-lists/)
