@@ -91,6 +91,7 @@ request and approve it, if it looks good.
 - [HackerRank: Equal Stacks](https://studyalgorithms.com/array/hackerrank---equal-stacks/)
 - [HackerRank: Missing Numbers](https://studyalgorithms.com/array/hackerrank---missing-numbers/)
 - [HackerRank: Pairs](https://studyalgorithms.com/array/hackerrank-pairs/)
+- [HackerRank: Between Two Sets](https://studyalgorithms.com/array/hackerrank-between-two-sets/)
 
 ## Linked Lists
 - [Merge two sorted Linked Lists](https://studyalgorithms.com/link_list/merge-two-sorted-linked-lists/)
