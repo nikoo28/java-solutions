@@ -12,7 +12,6 @@ You can also [subscribe via email](http://eepurl.com/g9Dadv).
 - [CONTRIBUTE](#contribute)
 - [Solutions for some coding platforms](#solutions-for-some-coding-platforms)
 - [Full list of questions](#full-list-of-questions)
-- [Basics](#basics)
 - [Code Explanations](#code-explanations)
   * [String](#string)
   * [Array](#array)
@@ -21,6 +20,8 @@ You can also [subscribe via email](http://eepurl.com/g9Dadv).
 - [Theory](#theory)
     + [Algorithmic Paradigms](#algorithmic-paradigms)
     + [Analysis of Algorithms](#analysis-of-algorithms)
+    + [Sorting Techniques](#sorting-techniques)
+    + [Data Structures](#data-structures)
 - [Playlists](#playlists)
 
 # How to use this repo
@@ -70,19 +71,14 @@ request and approve it, if it looks good.
 # Full list of questions
 [https://studyalgorithms.com/site-map/](https://studyalgorithms.com/site-map/)
 
-# Sorting Techniques
-- [Insertion Sort](https://studyalgorithms.com/array/insertion-sort/)
-- [Bubble Sort](https://studyalgorithms.com/array/bubble-sort/)
-- [Selection Sort](https://studyalgorithms.com/array/selection-sort/)
-- [Merge Sort](https://studyalgorithms.com/array/merge-sort/)
-- [Quick Sort](https://studyalgorithms.com/array/quick-sort/)
-
 # Code Explanations
 ## String
 - [Longest palindromic substring](https://studyalgorithms.com/string/longest-palindromic-substring/)
 - [First unique character in a string](https://studyalgorithms.com/string/first-unique-character-in-a-string/)
 - [Valid anagram strings](https://studyalgorithms.com/string/valid-anagram-strings/)
 - [HackerRank: Two Characters](https://studyalgorithms.com/string/hackerrank-two-characters/)
+- [HackerRank: Two Strings](https://studyalgorithms.com/string/hackerrank-two-strings/)
+- [HackerRank: Sherlock and the valid string](https://studyalgorithms.com/string/hackerrank-sherlock-valid-string/)
 
 ## Array
 - [Single non-repeating number](https://studyalgorithms.com/array/single-non-repeating-number/)
@@ -92,6 +88,7 @@ request and approve it, if it looks good.
 - [HackerRank: Missing Numbers](https://studyalgorithms.com/array/hackerrank---missing-numbers/)
 - [HackerRank: Pairs](https://studyalgorithms.com/array/hackerrank-pairs/)
 - [HackerRank: Between Two Sets](https://studyalgorithms.com/array/hackerrank-between-two-sets/)
+- [HackerRank: Queue Using Two Stacks](https://studyalgorithms.com/array/queue-using-two-stacks/)
 
 ## Linked Lists
 - [Merge two sorted Linked Lists](https://studyalgorithms.com/link_list/merge-two-sorted-linked-lists/)
@@ -112,6 +109,19 @@ request and approve it, if it looks good.
 - [How do you compare 2 Algorithms?](https://studyalgorithms.com/theory/how-do-you-compare-two-algorithms/)
 - [What is the Big O notation?](https://studyalgorithms.com/theory/big-o-simplified/)
 - [What is the Rate of Growth of an Algorithm?](https://studyalgorithms.com/theory/what-is-rate-of-growth-of-algorithm/)
+
+### Sorting Techniques
+- [Insertion Sort](https://studyalgorithms.com/array/insertion-sort/)
+- [Bubble Sort](https://studyalgorithms.com/array/bubble-sort/)
+- [Selection Sort](https://studyalgorithms.com/array/selection-sort/)
+- [Merge Sort](https://studyalgorithms.com/array/merge-sort/)
+- [Quick Sort](https://studyalgorithms.com/array/quick-sort/)
+- [Counting Sort](https://studyalgorithms.com/array/counting-sort/)
+
+### Data Structures
+- [Arrays](https://studyalgorithms.com/array/array-data-structure/)
+- [Stacks](https://studyalgorithms.com/theory/stack-data-structure/)
+- [Queue](https://studyalgorithms.com/theory/what-is-a-queue/)
 
 # Playlists
 - [Secrets of Algorithmic Paradigms](https://studyalgorithms.com/theory/course-on-algorithmic-paradigms/)
