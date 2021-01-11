@@ -117,6 +117,7 @@ request and approve it, if it looks good.
 - [Merge Sort](https://studyalgorithms.com/array/merge-sort/)
 - [Quick Sort](https://studyalgorithms.com/array/quick-sort/)
 - [Counting Sort](https://studyalgorithms.com/array/counting-sort/)
+- [Bucket Sort](https://studyalgorithms.com/theory/bucket-sort/)
 
 ### Data Structures
 - [Arrays](https://studyalgorithms.com/array/array-data-structure/)
