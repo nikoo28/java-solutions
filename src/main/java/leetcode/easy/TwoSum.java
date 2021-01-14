@@ -40,12 +40,11 @@ class TwoSum {
       }
     }
 
+    // Create the result array with indices
     int[] result = new int[2];
     for (int i = 0; i < nums.length; i++) {
-      if (nums[i] == num1)
-        result[0] = i;
-      if (nums[i] == num2)
-        result[1] = i;
+      if (nums[i] == num1) result[0] = i;
+      if (nums[i] == num2) result[1] = i;
     }
     return result;
   }
