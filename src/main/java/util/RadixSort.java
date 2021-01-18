@@ -18,7 +18,7 @@ public class RadixSort {
     for (int j : arr)
       count[(j / place) % 10]++;
 
-    // Calculate cummulative count
+    // Calculate cumulative count
     for (int i = 1; i < 10; i++)
       count[i] += count[i - 1];
 
