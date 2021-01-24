@@ -21,6 +21,7 @@ You can also [subscribe via email](http://eepurl.com/g9Dadv).
     + [Algorithmic Paradigms](#algorithmic-paradigms)
     + [Analysis of Algorithms](#analysis-of-algorithms)
     + [Sorting Techniques](#sorting-techniques)
+    + [Searching Techniques](#searching-techniques)
     + [Data Structures](#data-structures)
 - [Playlists](#playlists)
 
@@ -64,8 +65,8 @@ code improvements, doc improvements etc. is very welcome. Just send me a pull re
 request and approve it, if it looks good. 
 
 # Solutions for some coding platforms
-- [Leetcode](src/main/java/leetcode/)
-- [Hackerrank](src/main/java/hackerrank/)
+- [LeetCode](src/main/java/leetcode/)
+- [HackerRank](src/main/java/hackerrank/)
 - [Codility](src/main/java/codility/)
 
 # Full list of questions
@@ -89,6 +90,7 @@ request and approve it, if it looks good.
 - [HackerRank: Pairs](https://studyalgorithms.com/array/hackerrank-pairs/)
 - [HackerRank: Between Two Sets](https://studyalgorithms.com/array/hackerrank-between-two-sets/)
 - [HackerRank: Queue Using Two Stacks](https://studyalgorithms.com/array/queue-using-two-stacks/)
+- [LeetCode (#1): Two Sum](https://studyalgorithms.com/array/leetcode-two-sum/)
 
 ## Linked Lists
 - [Merge two sorted Linked Lists](https://studyalgorithms.com/link_list/merge-two-sorted-linked-lists/)
@@ -118,6 +120,10 @@ request and approve it, if it looks good.
 - [Quick Sort](https://studyalgorithms.com/array/quick-sort/)
 - [Counting Sort](https://studyalgorithms.com/array/counting-sort/)
 - [Bucket Sort](https://studyalgorithms.com/theory/bucket-sort/)
+
+### Searching Techniques
+- [Linear Search](https://studyalgorithms.com/theory/linear-search/)
+- [Binary Search](https://studyalgorithms.com/array/binary-search/)
 
 ### Data Structures
 - [Arrays](https://studyalgorithms.com/array/array-data-structure/)
