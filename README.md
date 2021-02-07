@@ -120,6 +120,7 @@ request and approve it, if it looks good.
 - [Quick Sort](https://studyalgorithms.com/array/quick-sort/)
 - [Counting Sort](https://studyalgorithms.com/array/counting-sort/)
 - [Bucket Sort](https://studyalgorithms.com/theory/bucket-sort/)
+- [Radix Sort](https://studyalgorithms.com/theory/radix-sort/)
 
 ### Searching Techniques
 - [Linear Search](https://studyalgorithms.com/theory/linear-search/)
