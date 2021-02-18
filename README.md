@@ -80,6 +80,7 @@ request and approve it, if it looks good.
 - [HackerRank: Two Characters](https://studyalgorithms.com/string/hackerrank-two-characters/)
 - [HackerRank: Two Strings](https://studyalgorithms.com/string/hackerrank-two-strings/)
 - [HackerRank: Sherlock and the valid string](https://studyalgorithms.com/string/hackerrank-sherlock-valid-string/)
+- [LeetCode (#49): Group Anagrams](https://studyalgorithms.com/string/leetcode-group-anagrams-solution/)
 
 ## Array
 - [Single non-repeating number](https://studyalgorithms.com/array/single-non-repeating-number/)
