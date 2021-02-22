@@ -28,4 +28,23 @@ public class BirthdayCakeCandles {
     return result;
   }
 
+  int birthdayCakeCandlesStream(List<Integer> candles) {
+
+    int maximum = Integer.MIN_VALUE;
+    int result = 0;
+
+    for (Integer candle : candles) {
+      if (candle < maximum)
+        continue;
+      if (candle == maximum)
+        result++;
+      if (candle > maximum) {
+        result = 1;
+        maximum = candle;
+      }
+    }
+
+    return result;
+  }
+
 }

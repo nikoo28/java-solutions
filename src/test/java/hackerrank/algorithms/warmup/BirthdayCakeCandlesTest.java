@@ -28,6 +28,7 @@ class BirthdayCakeCandlesTest {
     candles.add(3);
 
     assertEquals(2, birthdayCakeCandles.birthdayCakeCandles(candles));
+    assertEquals(2, birthdayCakeCandles.birthdayCakeCandlesStream(candles));
   }
 
   @Test
@@ -39,5 +40,6 @@ class BirthdayCakeCandlesTest {
     candles.add(3);
 
     assertEquals(2, birthdayCakeCandles.birthdayCakeCandles(candles));
+    assertEquals(2, birthdayCakeCandles.birthdayCakeCandlesStream(candles));
   }
 }
