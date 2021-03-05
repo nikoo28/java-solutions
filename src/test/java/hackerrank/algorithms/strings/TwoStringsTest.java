@@ -26,6 +26,7 @@ class TwoStringsTest {
     String s2 = "trap";
 
     assertEquals("YES", twoStrings.twoStrings(s1, s2));
+    assertEquals("YES", twoStrings.twoStringsMethodTwo(s1, s2));
   }
 
   @Test
@@ -34,6 +35,7 @@ class TwoStringsTest {
     String s2 = "algo";
 
     assertEquals("NO", twoStrings.twoStrings(s1, s2));
+    assertEquals("NO", twoStrings.twoStringsMethodTwo(s1, s2));
   }
 
   @Test
@@ -42,5 +44,6 @@ class TwoStringsTest {
     String s2 = "abcabcabcabcabcabc";
 
     assertEquals("NO", twoStrings.twoStrings(s1, s2));
+    assertEquals("NO", twoStrings.twoStringsMethodTwo(s1, s2));
   }
 }
