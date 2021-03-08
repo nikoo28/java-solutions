@@ -93,6 +93,7 @@ request and approve it, if it looks good.
 - [HackerRank: Queue Using Two Stacks](https://studyalgorithms.com/array/queue-using-two-stacks/)
 - [LeetCode (#1): Two Sum](https://studyalgorithms.com/array/leetcode-two-sum/)
 - [LeetCode (#33): Search in a Rotated Sorted Array](https://studyalgorithms.com/array/search-rotated-sorted-array/)
+- [HackerRank: Birthday Cake Candles](https://studyalgorithms.com/array/birthday-cake-candles/)
 
 ## Linked Lists
 - [Merge two sorted Linked Lists](https://studyalgorithms.com/link_list/merge-two-sorted-linked-lists/)
