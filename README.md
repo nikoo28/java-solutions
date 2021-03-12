@@ -94,6 +94,7 @@ request and approve it, if it looks good.
 - [LeetCode (#1): Two Sum](https://studyalgorithms.com/array/leetcode-two-sum/)
 - [LeetCode (#33): Search in a Rotated Sorted Array](https://studyalgorithms.com/array/search-rotated-sorted-array/)
 - [HackerRank: Birthday Cake Candles](https://studyalgorithms.com/array/birthday-cake-candles/)
+- [LeetCode (#442): Find all Duplicates in an Array](https://studyalgorithms.com/array/leetcode-find-duplicates-array/)
 
 ## Linked Lists
 - [Merge two sorted Linked Lists](https://studyalgorithms.com/link_list/merge-two-sorted-linked-lists/)
