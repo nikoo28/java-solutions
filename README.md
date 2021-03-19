@@ -134,6 +134,7 @@ request and approve it, if it looks good.
 - [Arrays](https://studyalgorithms.com/array/array-data-structure/)
 - [Stacks](https://studyalgorithms.com/theory/stack-data-structure/)
 - [Queue](https://studyalgorithms.com/theory/what-is-a-queue/)
+- [Linked Lists](https://studyalgorithms.com/link_list/what-is-a-linked-list/)
 
 # Playlists
 - [Secrets of Algorithmic Paradigms](https://studyalgorithms.com/theory/course-on-algorithmic-paradigms/)
