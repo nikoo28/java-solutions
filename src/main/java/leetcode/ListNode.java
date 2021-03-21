@@ -106,6 +106,21 @@ public class ListNode {
     return head;
   }
 
+  public void traverseALinkedList(ListNode head) {
+
+    ListNode temp = head;
+
+    // Run a loop until you reach null
+    while (temp != null) {
+
+      // Print the first value
+      System.out.println(temp.val);
+
+      // Move to the next node
+      temp = temp.next;
+    }
+  }
+
   public static void main(String[] args) {
 
     // Create 3 nodes
