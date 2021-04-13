@@ -65,4 +65,21 @@ class LeftRotationTest {
     leftRotation.rotateLeft(arr, rotation);
     assertArrayEquals(result, arr);
   }
+
+  @Test
+  void rotateLeft4() {
+    int[] arr = {1, 2, 3, 4, 5, 6, 7};
+    int rotation = 2;
+    int[] result = {3, 4, 5, 6, 7, 1, 2};
+    leftRotation.rotateLeftUsingReverse(arr, rotation);
+    assertArrayEquals(result, arr);
+
+    arr = new int[]{1, 2, 3, 4, 5, 6, 7};
+    leftRotation.rotateLeftUsingBruteForce(arr, rotation);
+    assertArrayEquals(result, arr);
+
+    arr = new int[]{1, 2, 3, 4, 5, 6, 7};
+    leftRotation.rotateLeft(arr, rotation);
+    assertArrayEquals(result, arr);
+  }
 }

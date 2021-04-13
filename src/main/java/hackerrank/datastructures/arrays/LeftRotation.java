@@ -59,8 +59,9 @@ public class LeftRotation {
     }
 
     // Store back the k elements
+    int idx = 0;
     for (int i = arr.length - k; i < arr.length; i++) {
-      arr[i] = temp[i - k - 1];
+      arr[i] = temp[idx++];
     }
   }
 }
