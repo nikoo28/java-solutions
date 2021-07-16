@@ -1,5 +1,7 @@
 package leetcode;
 
+import util.ListNode;
+
 /**
  * Created by nikoo28 on 12/19/17 12:43 AM
  */

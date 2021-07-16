@@ -21,15 +21,14 @@ public class SuperReducedString {
 
     Stack<Character> characterStack = new Stack<>();
 
-    for (int i = 0; i < str.length(); i++) {
-      char x = str.charAt(i);
+    for (char c : str.toCharArray()) {
 
       if (characterStack.isEmpty())
-        characterStack.push(x);
-      else if (x == characterStack.peek())
+        characterStack.push(c);
+      else if (c == characterStack.peek())
         characterStack.pop();
       else
-        characterStack.push(x);
+        characterStack.push(c);
     }
 
     StringBuilder resultBuilder = new StringBuilder();

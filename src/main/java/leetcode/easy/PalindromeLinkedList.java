@@ -1,6 +1,6 @@
 package leetcode.easy;
 
-import leetcode.ListNode;
+import util.ListNode;
 
 /**
  * Created by nikoo28 on 2019-07-20 22:26

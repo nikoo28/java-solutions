@@ -1,4 +1,4 @@
-package leetcode;
+package util;
 
 /**
  * Created by nikoo28 on 12/17/17 10:41 PM

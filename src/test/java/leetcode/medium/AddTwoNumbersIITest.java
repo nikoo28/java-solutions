@@ -1,6 +1,6 @@
 package leetcode.medium;
 
-import leetcode.ListNode;
+import util.ListNode;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;

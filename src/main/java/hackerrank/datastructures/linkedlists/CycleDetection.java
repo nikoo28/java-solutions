@@ -1,6 +1,6 @@
 package hackerrank.datastructures.linkedlists;
 
-import leetcode.ListNode;
+import util.ListNode;
 
 import java.util.HashSet;
 import java.util.Set;
