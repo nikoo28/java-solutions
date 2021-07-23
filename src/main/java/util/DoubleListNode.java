@@ -12,6 +12,36 @@ public class DoubleListNode {
     next = null;
   }
 
+  public void traverseFromBeginning(DoubleListNode node) {
+    // Go to the start
+    while (node.prev != null) {
+      node = node.prev;
+    }
+
+    // Start printing the values now
+    while (node != null) {
+      System.out.println(node.val);
+
+      // Move to next value
+      node = node.next;
+    }
+  }
+
+  public void traverseFromEnd(DoubleListNode node) {
+    // Go to the end
+    while (node.next != null) {
+      node = node.next;
+    }
+
+    // Start printing the values now
+    while (node != null) {
+      System.out.println(node.val);
+
+      // Move to previous value
+      node = node.prev;
+    }
+  }
+
   public static void main(String[] args) {
 
     // Create 3 nodes
