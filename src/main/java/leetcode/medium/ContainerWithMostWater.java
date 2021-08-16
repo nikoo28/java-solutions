@@ -1,4 +1,4 @@
-package leetcode;
+package leetcode.medium;
 
 /**
  * Created by nikoo28 on 12/18/17 9:25 PM
@@ -14,7 +14,10 @@ class ContainerWithMostWater {
 
     while (left < right) {
 
-      int area = Math.min(height[left], height[right]) * (right - left);
+      int area =
+          Math.min(height[left], height[right])
+          * (right - left);
+
       maxArea = Math.max(area, maxArea);
 
       if (height[left] < height[right])
