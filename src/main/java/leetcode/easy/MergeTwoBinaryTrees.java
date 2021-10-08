@@ -1,6 +1,6 @@
 package leetcode.easy;
 
-import leetcode.TreeNode;
+import util.TreeNode;
 
 /**
  * @author nikoo28 on 9/10/17

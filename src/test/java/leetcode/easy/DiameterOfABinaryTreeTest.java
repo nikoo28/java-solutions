@@ -1,6 +1,6 @@
 package leetcode.easy;
 
-import leetcode.TreeNode;
+import util.TreeNode;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;

@@ -2,7 +2,7 @@ package leetcode.medium;
 
 import java.util.*;
 
-import leetcode.TreeNode;
+import util.TreeNode;
 
 /**
  * Created by nikoo28 on 2019-08-24 18:30

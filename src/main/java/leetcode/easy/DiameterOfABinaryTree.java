@@ -1,6 +1,6 @@
 package leetcode.easy;
 
-import leetcode.TreeNode;
+import util.TreeNode;
 
 import java.util.HashMap;
 import java.util.Map;

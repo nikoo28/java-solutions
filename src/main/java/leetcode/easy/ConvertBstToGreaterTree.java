@@ -2,7 +2,7 @@ package leetcode.easy;
 
 import java.util.*;
 
-import leetcode.TreeNode;
+import util.TreeNode;
 
 /**
  * @author nikoo28 on 9/17/17

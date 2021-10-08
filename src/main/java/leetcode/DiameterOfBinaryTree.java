@@ -1,5 +1,7 @@
 package leetcode;
 
+import util.TreeNode;
+
 /**
  * Created by nikoo28 on 9/23/18 11:07 PM
  */
