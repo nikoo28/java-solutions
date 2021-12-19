@@ -15,10 +15,12 @@ public class WriteToFile {
     String logFile = args[0].split("=")[1];
     int numberOfRecordsPerSecond = Integer.parseInt(args[1].split("=")[1]);
     int maximumRecords = Integer.parseInt(args[2].split("=")[1]);
+    String run = args[3].split("=")[1];
 
     System.out.println("Number of records per second: " + numberOfRecordsPerSecond);
     System.out.println("Maximum count: " + maximumRecords);
     System.out.println("Flushing to: " + logFile);
+    System.out.println("Run string: " + run);
 
     RateLimiter rateLimiter = RateLimiter.create(numberOfRecordsPerSecond);
     BufferedWriter writer = new BufferedWriter(new FileWriter(logFile));
@@ -27,7 +29,7 @@ public class WriteToFile {
     IntStream.range(0, maximumRecords).forEach(i -> {
       try {
         rateLimiter.acquire();
-        writer.append(getPayload(i));
+        writer.append(getPayload(i, run));
         writer.append("\n");
         writer.flush();
         System.out.print(i);
@@ -40,12 +42,13 @@ public class WriteToFile {
     writer.close();
   }
 
-  private static String getPayload(int count) {
+  private static String getPayload(int count, String run) {
     String timestamp = new Timestamp(System.currentTimeMillis()).toInstant().toString();
     return "{" +
         "\"event_timestamp\":\"" + timestamp + "\"," +
-        "\"idx\":\"" + count + "\"," +
-        "\"key\":\"value" + count + "\"" +
+        "\"idx\":" + count + "," +
+        "\"key\":\"value" + count + "\"," +
+        "\"run\":\"" + run + "\"" +
         "}";
   }
 
