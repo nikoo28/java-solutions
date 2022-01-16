@@ -13,7 +13,7 @@ public class NumberOfGoodPairs {
 
     int totalCount = 0;
 
-    // Caclulate total number of pairs possible
+    // Calculate total number of pairs possible
     for (int i : count) {
       totalCount += ((i) * (i-1))/2;
     }
