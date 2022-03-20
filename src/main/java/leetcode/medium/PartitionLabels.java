@@ -9,18 +9,24 @@ import java.util.List;
 
 class PartitionLabels {
 
-  private List<Integer> partitionLabels(String str) {
+  public List<Integer> partitionLabels(String str) {
 
     List<Integer> partitions = new ArrayList<>();
 
     for (int i = 0; i < str.length(); ) {
 
+      // Get first and last index of first character
       int startIndex = i;
       int endIndex = str.lastIndexOf(str.charAt(startIndex));
 
       for (int s = startIndex + 1; s <= endIndex - 1; s++) {
-        if (str.lastIndexOf(str.charAt(s)) > endIndex) {
-          endIndex = str.lastIndexOf(str.charAt(s));
+
+        // Find last index of any subsequent characters
+        int lastIndexOfNextChar = str.lastIndexOf(str.charAt(s));
+
+        if (lastIndexOfNextChar > endIndex) {
+          // Update endIndex if required
+          endIndex = lastIndexOfNextChar;
         }
       }
 
@@ -28,17 +34,6 @@ class PartitionLabels {
       i = endIndex + 1;
     }
 
-
     return partitions;
   }
-
-  public static void main(String[] args) {
-
-    PartitionLabels partitionLabels = new PartitionLabels();
-    System.out.println(partitionLabels.partitionLabels("ababcbacadefegdehijhklij"));
-    System.out.println(partitionLabels.partitionLabels("abcaxdefgd"));
-    System.out.println(partitionLabels.partitionLabels("qiejxqfnqceocmy"));
-
-  }
-
 }
