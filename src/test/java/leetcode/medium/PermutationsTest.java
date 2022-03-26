@@ -7,32 +7,21 @@ import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class SubsetsTest {
+class PermutationsTest {
 
-  private final Subsets subsets;
+  private final Permutations permutations;
 
-  SubsetsTest() {
-    subsets = new Subsets();
+  PermutationsTest() {
+    permutations = new Permutations();
   }
 
   @Test
-  public void testSubsets1() {
+  void testPermute1() {
     int[] nums = {1, 2, 3};
+
     List<List<Integer>> expectedList = new ArrayList<>();
 
     List<Integer> tempList = new ArrayList<>();
-    expectedList.add(new ArrayList<>(tempList));
-
-    tempList.clear();
-    tempList.add(1);
-    expectedList.add(new ArrayList<>(tempList));
-
-    tempList.clear();
-    tempList.add(1);
-    tempList.add(2);
-    expectedList.add(new ArrayList<>(tempList));
-
-    tempList.clear();
     tempList.add(1);
     tempList.add(2);
     tempList.add(3);
@@ -41,40 +30,52 @@ class SubsetsTest {
     tempList.clear();
     tempList.add(1);
     tempList.add(3);
-    expectedList.add(new ArrayList<>(tempList));
-
-    tempList.clear();
     tempList.add(2);
     expectedList.add(new ArrayList<>(tempList));
 
     tempList.clear();
     tempList.add(2);
+    tempList.add(1);
     tempList.add(3);
     expectedList.add(new ArrayList<>(tempList));
 
     tempList.clear();
+    tempList.add(2);
     tempList.add(3);
+    tempList.add(1);
     expectedList.add(new ArrayList<>(tempList));
 
-    List<List<Integer>> actualList = subsets.subsets(nums);
+    tempList.clear();
+    tempList.add(3);
+    tempList.add(1);
+    tempList.add(2);
+    expectedList.add(new ArrayList<>(tempList));
 
-    assertEquals(expectedList, actualList);
+    tempList.clear();
+    tempList.add(3);
+    tempList.add(2);
+    tempList.add(1);
+    expectedList.add(new ArrayList<>(tempList));
+
+    assertEquals(expectedList, permutations.permute(nums));
   }
 
   @Test
-  public void testSubsets2() {
-    int[] nums = {1};
+  void testPermute2() {
+    int[] nums = {1, 0};
+
     List<List<Integer>> expectedList = new ArrayList<>();
 
     List<Integer> tempList = new ArrayList<>();
+    tempList.add(1);
+    tempList.add(0);
     expectedList.add(new ArrayList<>(tempList));
 
     tempList.clear();
+    tempList.add(0);
     tempList.add(1);
     expectedList.add(new ArrayList<>(tempList));
 
-    List<List<Integer>> actualList = subsets.subsets(nums);
-
-    assertEquals(expectedList, actualList);
+    assertEquals(expectedList, permutations.permute(nums));
   }
 }
