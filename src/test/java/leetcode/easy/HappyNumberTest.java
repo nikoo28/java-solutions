@@ -27,6 +27,5 @@ class HappyNumberTest {
     assertFalse(happyNumber.isHappy(1134));
     assertFalse(happyNumber.isHappy(99999));
     assertFalse(happyNumber.isHappy(756345));
-
   }
 }
