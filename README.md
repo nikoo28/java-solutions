@@ -1,7 +1,7 @@
 ![Main Workflow](https://github.com/nikoo28/java-solutions/workflows/Main%20Workflow/badge.svg)
 
 # Follow me on your favorite platform for latest updates on my video channel
-| [Youtube](https://www.youtube.com/c/StudyAlgorithms)  | [Facebook](https://www.facebook.com/studyalgos)  | [Twitter](https://twitter.com/studyalgorithms)  | [Tumblr](https://studyalgos.tumblr.com/)  | [RSS](https://studyalgorithms.com/feed/)  |
+| [Youtube](https://www.youtube.com/c/NikhilLohiaYouTube)  | [Facebook](https://www.facebook.com/studyalgos)  | [Twitter](https://twitter.com/studyalgorithms)  | [Tumblr](https://studyalgos.tumblr.com/)  | [RSS](https://studyalgorithms.com/feed/)  |
 |:-:|:-:|:-:|:-:|:-:|
 
 You can also [subscribe via email](http://eepurl.com/g9Dadv).
