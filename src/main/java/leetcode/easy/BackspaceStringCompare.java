@@ -9,8 +9,8 @@ public class BackspaceStringCompare {
   private String getActual(String input) {
 
     StringBuilder actualString = new StringBuilder();
-
     int hashCount = 0;
+
     for (int i = input.length() - 1; i >= 0 ; i--) {
 
       // Keep a count of backspace characters
@@ -19,15 +19,12 @@ public class BackspaceStringCompare {
         continue;
       }
 
-      // If it is a character
-      if (hashCount < 1) {
-        // If no backspace yet, just insert
-        // at beginning
-        actualString.insert(0, input.charAt(i));
-      } else {
-        // If we have a count of backspace
-        // reduce it and skip the character
+      // If backspace count > 0 reduce it and skip the character
+      if (hashCount > 0) {
         hashCount--;
+      } else {
+        // If no backspace, just insert at beginning
+        actualString.insert(0, input.charAt(i));
       }
     }
 
