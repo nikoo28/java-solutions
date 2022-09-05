@@ -17,16 +17,12 @@ public class AverageOfLevelsInBinaryTree {
 
     List<Double> avgList = new ArrayList<>();
 
-    while (!levelQueue.isEmpty()) {
-
-      if (levelQueue.peek() == null) break;
+    while (levelQueue.peek() != null) {
 
       double sum = 0;
       int nodes = 0;
 
-      while (true) {
-
-        if (levelQueue.peek() == null) break;
+      while (levelQueue.peek() != null) {
 
         TreeNode node = levelQueue.poll();
         sum += node.val;
