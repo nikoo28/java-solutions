@@ -8,7 +8,7 @@ class ProductOfArrayExceptSelf {
 
   public int[] productExceptSelf(int[] nums) {
 
-    // Array to store all left muliplication
+    // Array to store all left multiplication
     int[] left = new int[nums.length];
 
     // Array to store all right multiplication
