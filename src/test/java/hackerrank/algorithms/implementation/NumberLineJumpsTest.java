@@ -45,4 +45,14 @@ class NumberLineJumpsTest {
 
     assertEquals("YES", numberLineJumps.kangaroo(x1, v1, x2, v2));
   }
+
+  @Test
+  void testNumberLineJumps4(){
+    int x1 = 43;
+    int v1 = 2;
+    int x2 = 70;
+    int v2 = 2;
+
+    assertEquals("NO", numberLineJumps.kangaroo(x1, v1, x2, v2));
+  }
 }
