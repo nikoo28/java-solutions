@@ -8,66 +8,42 @@ import util.ListNode;
 
 class PalindromeLinkedList {
 
-  private boolean isPalindrome(ListNode head) {
+  boolean isPalindrome(ListNode head) {
 
-    if (head == null)
-      return false;
-    if (head.next == null)
-      return true;
-
-    ListNode headPtr = head;
-
-    ListNode clone = new ListNode(head.val);
-    ListNode clonePtr = clone;
-    while (head.next != null) {
-      head = head.next;
-      clone.next = new ListNode(head.val);
-      clone = clone.next;
+    // Find the middle
+    ListNode fast = head, slow = head;
+    while (fast != null && fast.next != null) {
+      fast = fast.next.next;
+      slow = slow.next;
     }
-    clone.next = null;
+    if (fast != null) { // odd nodes: let right half smaller
+      slow = slow.next;
+    }
 
-    clonePtr = reverseList(clonePtr);
+    // Reverse the second half
+    slow = reverseList(slow);
+    fast = head;
 
-    while (headPtr != null) {
-
-      if (headPtr.val != clonePtr.val)
+    // Start comparing one by one
+    while (slow != null) {
+      if (fast.val != slow.val)
         return false;
 
-      headPtr = headPtr.next;
-      clonePtr = clonePtr.next;
+      fast = fast.next;
+      slow = slow.next;
     }
-
     return true;
   }
 
   private ListNode reverseList(ListNode head) {
-
-    if (head == null || head.next == null)
-      return head;
-
     ListNode prev = null;
-
-    while (head.next != null) {
-
-      ListNode temp = head.next;
+    while (head != null) {
+      ListNode next = head.next;
       head.next = prev;
       prev = head;
-      head = temp;
+      head = next;
     }
-
-    head.next = prev;
-    return head;
-
-  }
-
-  public static void main(String[] args) {
-    PalindromeLinkedList palindromeLinkedList = new PalindromeLinkedList();
-
-    ListNode head = new ListNode(1);
-    head.next = new ListNode(2);
-    head.next.next = new ListNode(3);
-
-    palindromeLinkedList.isPalindrome(head);
+    return prev;
   }
 
 }
