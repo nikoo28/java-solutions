@@ -1,4 +1,4 @@
-package leetcode;
+package leetcode.easy;
 
 import util.TreeNode;
 
@@ -10,7 +10,7 @@ import java.util.Queue;
  */
 class MaximumDepthOfABinaryTree {
 
-  private int maxDepth(TreeNode root) {
+  int maxDepth(TreeNode root) {
 
     if (root == null)
       return 0;
@@ -34,18 +34,4 @@ class MaximumDepthOfABinaryTree {
 
     return levels;
   }
-
-  public static void main(String[] args) {
-
-    TreeNode root = new TreeNode(1);
-    TreeNode left = new TreeNode(2);
-    TreeNode right = new TreeNode(3);
-    root.left = left;
-    root.right = right;
-
-    MaximumDepthOfABinaryTree maximumDepthOfABinaryTree = new MaximumDepthOfABinaryTree();
-    System.out.println(maximumDepthOfABinaryTree.maxDepth(root));
-
-  }
-
 }
