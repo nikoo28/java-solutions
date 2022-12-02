@@ -8,10 +8,10 @@ class BestTimeToBuyAndSellAStock {
 
   int maxProfit(int[] prices) {
 
-    // at the begining the minimum price is the first price
+    // at the beginning the minimum price is the first price
     int buy_price = prices[0];
 
-    // at the begining the minimum  profit is zero
+    // at the beginning the minimum  profit is zero
     int profit = 0;
 
     for (int i = 1; i < prices.length; i++) {
