@@ -6,15 +6,22 @@ package leetcode;
 
 class MissingNumber {
 
-  public int missingNumber(int[] nums) {
+  int missingNumber(int[] nums) {
 
-    double sum = (nums.length * (nums.length + 1))/2;
+    int allXOR = 0;
 
-    for (int num : nums) {
-      sum -= num;
+    // XOR all numbers in range [0, n]
+    for (int i = 0; i <= nums.length; i++) {
+      allXOR = allXOR ^ i;
     }
 
-    return (int)sum;
+    // XOR all numbers in the given array
+    for (int num : nums) {
+      allXOR = allXOR ^ num;
+    }
+
+    // The missing number
+    return allXOR;
   }
 
 }
