@@ -1,80 +1,99 @@
-import java.util.ArrayList;
-import java.util.List;
+import java.util.*;
+import java.lang.*;
+import java.io.*;
 
-class DSU {
-  public List<Integer> parent;
-  public List<Integer> size;
+class numOfIslands2 {
+    public static void main(String[] args) throws IOException {
+        Scanner sc = new Scanner(System.in);
+        int T = sc.nextInt();
+        while (T-- > 0) {
+            int n = sc.nextInt();
+            int m = sc.nextInt();
+            int  k= sc.nextInt();
+            int[][] a = new int[k][2];
+            for(int i=0;i<k;i++){
+            
+                a[i][0] = sc.nextInt();
+                a[i][1] = sc.nextInt();
+            }
+            
+            Solution obj = new Solution();
+            List<Integer> ans = obj.numOfIslands(n,m,a);
+           
+            for(int i:ans){
+                System.out.print(i+" ");
+            }
+            System.out.println();
+        }
+    }
+}
 
-  public DSU(int n) {
-    parent = new ArrayList<>(n);
-    size = new ArrayList<>(n);
-    for (int i = 0; i < n; i++) {
-      parent.add(i);
-      size.add(1);
+class DisjointSet{
+    int[] parent;
+    int[] size;
+    
+    public DisjointSet(int n){
+        parent = new int[n];
+        size = new int[n];
+        
+        for(int i=0; i<n; i++){
+            parent[i] = i;
+            size[i] = 1;
+        }
     }
-  }
-
-  public int find(int a) {
-    if (parent.get(a) == a) {
-      return a;
+    
+    public int findUPar(int u){
+        if(parent[u] == u) return u;
+        return parent[u] = findUPar(parent[u]);
     }
-    return parent.set(a, find(parent.get(a)));
-  }
-
-  public void unionBySize(int u, int v) {
-    int parU = find(u), parV = find(v);
-    if (parU == parV) {
-      return;
+    
+    public void unionBySize(int u, int v){
+        int uPar = findUPar(u), vPar = findUPar(v);
+        if(uPar == vPar) return;
+        if(size[uPar] > size[vPar]){
+            parent[vPar] = parent[uPar];
+            size[uPar] += size[vPar];
+        } else {
+            parent[uPar] = parent[vPar];
+            size[vPar] += size[uPar];
+        }
     }
-    if (size.get(parV) < size.get(parU)) {
-      parent.set(parV, parU);
-      size.set(parU, size.get(parU) + size.get(parV));
-    } else {
-      parent.set(parU, parV);
-      size.set(parV, size.get(parV) + size.get(parU));
-    }
-  }
 }
 
 class Solution {
-  public List<Integer> numOfIslands(int n, int m, List<List<Integer>> ops) {
-    DSU d = new DSU(m * n);
-    List<List<Integer>> vis = new ArrayList<>(n);
-    for (int i = 0; i < n; i++) {
-      vis.add(new ArrayList<>(m));
-      for (int j = 0; j < m; j++) {
-        vis.get(i).add(0);
-      }
-    }
-    List<Integer> ans = new ArrayList<>();
-    int dx[] = {1, -1, 0, 0};
-    int dy[] = {0, 0, 1, -1};
-    int count = 0;
-    for (List<Integer> x : ops) {
-      int u = x.get(0), v = x.get(1);
-      if (vis.get(u).get(v) == 1) {
-        ans.add(count);
-        continue;
-      }
-      count++;
-      vis.get(u).set(v, 1);
-      for (int i = 0; i < 4; i++) {
-        int nx = u + dx[i];
-        int ny = v + dy[i];
-        if (check(nx, ny, n, m) && vis.get(nx).get(ny) == 1) {
-          int roll = u * m + v;
-          int Roll = nx * m + ny;
-          if (d.find(roll) != d.find(Roll)) {
-            d.unionBySize(roll, Roll);
-            count--;
-          }
+    
+    public List<Integer> numOfIslands(int rows, int cols, int[][] operators) {
+        DisjointSet ds = new DisjointSet(rows*cols);
+        List<Integer> ans = new ArrayList<>();
+        
+        int[][] visited = new int[rows][cols];
+        
+        int[] rDelta = new int[]{0,0,1,-1};
+        int[] cDelta = new int[]{1,-1,0,0};
+        
+        int islands = 0;
+        
+        for(int[] operator : operators){
+            int r = operator[0], c = operator[1];
+            if(visited[r][c] != 1){
+                visited[r][c] = 1;
+                islands++;
+                
+                for(int i=0; i<4; i++){
+                    int u = r + rDelta[i], v = c + cDelta[i];
+                    
+                    if(u>=0 && u<rows && v>=0 && v<cols && visited[u][v]==1){
+                        if(ds.findUPar(u*cols + v) != ds.findUPar(r*cols + c)){
+                            islands--;
+                            ds.unionBySize(u*cols + v, r*cols + c);
+                        }
+                    }
+                }
+            }
+            ans.add(islands);
         }
-      }
-      ans.add(count);
+        
+        return ans;
     }
-    return ans;
-  }
-
-public boolean check(int x,int y,int n,int m){
-        return (x>=0 && x<n && y>=0 && y<m);
+    
 }
