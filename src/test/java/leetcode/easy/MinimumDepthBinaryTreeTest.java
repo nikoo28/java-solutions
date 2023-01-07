@@ -26,7 +26,7 @@ class MinimumDepthBinaryTreeTest {
     root.left = new TreeNode(2);
     root.right = new TreeNode(3);
 
-    // Adding more child to left node
+    // Adding more children to nodes
     //            3
     //          /   \
     //        2      3
@@ -51,7 +51,7 @@ class MinimumDepthBinaryTreeTest {
     root.left = new TreeNode(9);
     root.right = new TreeNode(2);
 
-    // Adding more child to left node
+    // Adding more child to right node
     //            1
     //          /   \
     //        9      2
