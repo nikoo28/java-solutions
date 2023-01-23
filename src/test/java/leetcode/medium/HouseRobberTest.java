@@ -14,7 +14,7 @@ class HouseRobberTest {
 
   @Test
   void testRob1() {
-    int[] nums = {1, 2, 3, 1};
+    int[] nums = {2, 1, 1, 2};
 
     int expectedLoot = 4;
 
