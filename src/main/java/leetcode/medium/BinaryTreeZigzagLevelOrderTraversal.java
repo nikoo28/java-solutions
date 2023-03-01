@@ -10,26 +10,26 @@ import util.TreeNode;
 
 class BinaryTreeZigzagLevelOrderTraversal {
 
-  public List<List<Integer>> zigzagLevelOrder(TreeNode root) {
+  List<List<Integer>> zigzagLevelOrder(TreeNode root) {
+
+    List<List<Integer>> zigzag = new ArrayList<>();
+    if (root == null) return zigzag;
 
     Queue<TreeNode> queue = new LinkedList<>();
-    List<List<Integer>> zigzag = new ArrayList<>();
-
-    if (root == null)
-      return zigzag;
-
     queue.add(root);
     boolean flag = false;
+
     while (!queue.isEmpty()) {
 
       int size = queue.size();
       List<Integer> level = new ArrayList<>();
-      Stack<Integer> reverseLevel = new Stack<>();
+      Stack<Integer> reverseStack = new Stack<>();
       for (int i = 0; i < size; i++) {
-
         TreeNode node = queue.poll();
+
+        // Check flag
         if (flag)
-          reverseLevel.add(node.val);
+          reverseStack.add(node.val);
         else
           level.add(node.val);
 
@@ -38,15 +38,11 @@ class BinaryTreeZigzagLevelOrderTraversal {
       }
       flag = !flag;
 
-      if (!reverseLevel.isEmpty()) {
-        while (!reverseLevel.isEmpty()) {
-          level.add(reverseLevel.pop());
-        }
-      }
+      // Pop all elements from stack
+      while (!reverseStack.isEmpty())
+        level.add(reverseStack.pop());
 
-      if (!level.isEmpty()) {
-        zigzag.add(level);
-      }
+      zigzag.add(level);
     }
 
     return zigzag;
