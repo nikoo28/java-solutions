@@ -6,19 +6,16 @@ public class ThreeSum {
 
   List<List<Integer>> threeSum(int[] arr) {
 
-    Set<List<Integer>> result = new HashSet<>();
-
-    if (arr == null || arr.length < 3)
-      return new ArrayList<>(result);
+    if (arr == null || arr.length < 3) return new ArrayList<>();
 
     // Sort the elements
     Arrays.sort(arr);
+    Set<List<Integer>> result = new HashSet<>();
 
     // Now fix the first element and find the other two elements
     for (int i = 0; i < arr.length - 2; i++)
     {
-      // To find the other two elements, start two index variables
-      // from two corners of the array and move them toward each other
+      // Find other two elements using Two Sum approach
       int left = i + 1;
       int right = arr.length - 1;
 
