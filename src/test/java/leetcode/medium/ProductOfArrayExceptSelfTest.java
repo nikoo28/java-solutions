@@ -31,4 +31,14 @@ class ProductOfArrayExceptSelfTest {
     int[] actual = productOfArrayExceptSelf.productExceptSelf(nums);
     assertArrayEquals(expected, actual);
   }
+
+  @Test
+  void testProductExceptSelf3() {
+    int[] nums = {0, 0};
+
+    int[] expected = {0, 0};
+
+    int[] actual = productOfArrayExceptSelf.productExceptSelf(nums);
+    assertArrayEquals(expected, actual);
+  }
 }

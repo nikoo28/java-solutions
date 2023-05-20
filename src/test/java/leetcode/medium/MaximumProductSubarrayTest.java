@@ -29,4 +29,10 @@ class MaximumProductSubarrayTest {
     int[] nums = {2, 3, -2, -5, 6, -1, 4};
     assertEquals(360, maximumProductSubarray.maxProduct(nums));
   }
+
+  @Test
+  void testMaxProduct4() {
+    int[] nums = {0, 0};
+    assertEquals(0, maximumProductSubarray.maxProduct(nums));
+  }
 }
