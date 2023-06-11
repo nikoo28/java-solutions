@@ -23,7 +23,7 @@ class ShuffleStringTest {
   @Test
   void testRestoreString2() {
     String s = "abc";
-    int[] indices = {1, 2, 3};
+    int[] indices = {0, 1, 2};
 
     assertEquals("abc", shuffleString.restoreString(s, indices));
   }
