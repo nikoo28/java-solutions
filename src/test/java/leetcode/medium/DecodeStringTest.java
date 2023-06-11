@@ -51,4 +51,12 @@ class DecodeStringTest {
 
     assertEquals(expected, decodeString.decodeString(s));
   }
+
+  @Test
+  void testDecodeString6() {
+    String s= "11[ab2[c]de]";
+    String expected = "abccdeabccdeabccdeabccdeabccdeabccdeabccdeabccdeabccdeabccdeabccde";
+
+    assertEquals(expected, decodeString.decodeString(s));
+  }
 }
