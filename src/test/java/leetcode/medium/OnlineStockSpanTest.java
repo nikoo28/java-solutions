@@ -56,4 +56,13 @@ class OnlineStockSpanTest {
     int[] actualSpans = onlineStockSpan.calculateSpans(prices);
     assertArrayEquals(spans, actualSpans);
   }
+
+  @Test
+  void testCalculateSpans6() {
+    int[] prices = {10, 10, 10, 10};
+    int[] spans = {1, 1, 1, 1};
+
+    int[] actualSpans = onlineStockSpan.calculateSpans(prices);
+    assertArrayEquals(spans, actualSpans);
+  }
 }
