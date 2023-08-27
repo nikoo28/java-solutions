@@ -13,10 +13,14 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class PascalsTriangleTest {
 
-  private PascalsTriangle pascalsTriangle = new PascalsTriangle();
+  private final PascalsTriangle pascalsTriangle;
+
+  PascalsTriangleTest() {
+    pascalsTriangle = new PascalsTriangle();
+  }
 
   @Test
-  void testGenerate() {
+  void testGenerate1() {
     List<List<Integer>> expectedResult = new ArrayList<>();
 
     List<Integer> row1 = new ArrayList<>();
