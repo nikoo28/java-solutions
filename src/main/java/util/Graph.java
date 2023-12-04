@@ -48,17 +48,4 @@ public class Graph {
     adjMatrix = newAdjMatrix;
     numVertices--;
   }
-
-  // Print the matrix
-  public String toString() {
-    StringBuilder s = new StringBuilder();
-    for (int i = 0; i < numVertices; i++) {
-      s.append(i + ": ");
-      for (boolean j : adjMatrix[i]) {
-        s.append((j ? 1 : 0) + " ");
-      }
-      s.append("\n");
-    }
-    return s.toString();
-  }
 }
