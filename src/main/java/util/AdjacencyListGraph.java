@@ -48,6 +48,50 @@ public class AdjacencyListGraph {
     }
   }
 
+  public void DFSIterative(int startVertex) {
+    Set<Integer> visited = new HashSet<>();
+    Stack<Integer> stack = new Stack<>();
+
+    stack.push(startVertex);
+
+    // Keep traversing until stack is empty
+    while (!stack.isEmpty()) {
+
+      // Get an element from stack and mark as visited
+      int currentVertex = stack.pop();
+
+      System.out.print(currentVertex + " ");
+      visited.add(currentVertex);
+
+      // Add all the unvisited neighbors to stack
+      for (int neighbor :
+          adjacencyList.getOrDefault(currentVertex, Collections.emptyList()))
+        if (!visited.contains(neighbor))
+          stack.push(neighbor);
+    }
+  }
+
+  public void DFS(int startVertex) {
+    Set<Integer> visited = new HashSet<>();
+    DFSRecursive(startVertex, visited);
+  }
+
+  private void DFSRecursive(int vertex, Set<Integer> visited) {
+
+    // Add the vertex to visited set
+    visited.add(vertex);
+    System.out.print(vertex + " ");
+
+    // Iterate through each neighbor of the vertex
+    for (int neighbor :
+        adjacencyList.getOrDefault(vertex, Collections.emptyList()))
+
+      // If not visited, perform dfs on the vertex
+      if (!visited.contains(neighbor))
+        DFSRecursive(neighbor, visited);
+
+  }
+
   public static void main(String[] args) {
     AdjacencyListGraph graph = new AdjacencyListGraph();
 
