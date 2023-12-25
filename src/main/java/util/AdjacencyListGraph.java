@@ -48,6 +48,30 @@ public class AdjacencyListGraph {
     }
   }
 
+  public void BFSIterative(int startVertex) {
+    Set<Integer> visited = new HashSet<>();
+    Queue<Integer> queue = new LinkedList<>();
+
+    queue.add(startVertex);
+    visited.add(startVertex);
+
+    // Keep traversing till the queue is empty
+    while (!queue.isEmpty()) {
+
+      // Get an element from the queue and mark as visited
+      int currentVertex = queue.poll();
+      System.out.print(currentVertex + " ");
+
+      // Add all the neighbors to the queue
+      for (int neighbor :
+          adjacencyList.getOrDefault(currentVertex, Collections.emptyList()))
+        if (!visited.contains(neighbor)) {
+          queue.add(neighbor);
+          visited.add(neighbor);
+        }
+    }
+  }
+
   public void DFSIterative(int startVertex) {
     Set<Integer> visited = new HashSet<>();
     Stack<Integer> stack = new Stack<>();
@@ -57,17 +81,20 @@ public class AdjacencyListGraph {
     // Keep traversing until stack is empty
     while (!stack.isEmpty()) {
 
-      // Get an element from stack and mark as visited
       int currentVertex = stack.pop();
 
-      System.out.print(currentVertex + " ");
-      visited.add(currentVertex);
+      // Get an element from stack and mark as visited
+      // if we haven't visited it already
+      if (!visited.contains(currentVertex)) {
+        System.out.print(currentVertex + " ");
+        visited.add(currentVertex);
 
-      // Add all the unvisited neighbors to stack
-      for (int neighbor :
-          adjacencyList.getOrDefault(currentVertex, Collections.emptyList()))
-        if (!visited.contains(neighbor))
-          stack.push(neighbor);
+        // Add all the unvisited neighbors to stack
+        for (int neighbor :
+            adjacencyList.getOrDefault(currentVertex, Collections.emptyList()))
+          if (!visited.contains(neighbor))
+            stack.push(neighbor);
+      }
     }
   }
 
