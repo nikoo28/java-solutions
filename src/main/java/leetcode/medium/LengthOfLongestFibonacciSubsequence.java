@@ -11,6 +11,12 @@ public class LengthOfLongestFibonacciSubsequence {
 		int result = 0;
 		
 		Map<Integer, Integer> map = new HashMap<>();
+		for(int i=0;i<len;i++) {
+			map.put(arr[i], i);
+			for(int j=1;j<len;j++) {
+				dp[i][j]= 2; 
+			}
+		}
 		
 		for(int i=0;i<len;i++) {
 			for(int j=i+1;j<len;j++) {
