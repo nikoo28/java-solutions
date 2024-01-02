@@ -1,13 +1,13 @@
 package util;
 
-public class Graph {
+public class AdjacencyMatrixGraph {
 
   private int adjMatrix[][];
 
   private int numVertices;
 
   // Initialize the matrix
-  public Graph(int numVertices) {
+  public AdjacencyMatrixGraph(int numVertices) {
     this.numVertices = numVertices;
     adjMatrix = new int[numVertices][numVertices];
   }
