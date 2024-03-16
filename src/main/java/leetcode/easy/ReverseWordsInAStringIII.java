@@ -4,10 +4,8 @@ public class ReverseWordsInAStringIII {
 
   String reverseWords(String s) {
 
-    // Convert the string to a character array
     char[] arr = s.toCharArray();
 
-    // Initialize the left and right pointers
     int left = 0, right = 0;
 
     while (right < arr.length) {

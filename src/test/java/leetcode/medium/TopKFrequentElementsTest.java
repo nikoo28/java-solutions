@@ -38,4 +38,13 @@ class TopKFrequentElementsTest {
     int[] res = {-1, 2};
     assertArrayEquals(res, topKFrequentElements.topKFrequent(arr, k));
   }
+
+  @Test
+  void testTopKFrequent4() {
+    int[] arr = {1, 1, 1, 1, 2, 2, 3, 3, 4};
+    int k = 2;
+
+    int[] res = {1, 2, 3};
+    assertArrayEquals(res, topKFrequentElements.topKFrequent(arr, k));
+  }
 }
