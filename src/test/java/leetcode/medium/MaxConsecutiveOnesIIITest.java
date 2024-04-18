@@ -15,7 +15,7 @@ class MaxConsecutiveOnesIIITest {
   @Test
   void testLongestOnes1() {
     int[] nums = {1, 1, 0, 0, 1, 1, 1, 0, 1, 1};
-    int k = 2;
+    int k = 1;
     assertEquals(6, maxConsecutiveOnesIII.longestOnes(nums, k));
   }
 
