@@ -41,4 +41,10 @@ class JumpGameIITest {
     int[] arr = {9};
     assertEquals(0, jumpGameII.jump(arr));
   }
+
+  @Test
+  void testJump6() {
+    int[] arr = {1, 4, 3, 2, 6, 7};
+    assertEquals(2, jumpGameII.jump(arr));
+  }
 }
