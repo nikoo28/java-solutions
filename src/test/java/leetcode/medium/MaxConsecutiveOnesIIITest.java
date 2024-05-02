@@ -39,4 +39,18 @@ class MaxConsecutiveOnesIIITest {
     int k = 2;
     assertEquals(2, maxConsecutiveOnesIII.longestOnes(nums, k));
   }
+
+  @Test
+  void testLongestOnes5() {
+    int[] nums = {0, 0, 1, 1, 0, 0, 1, 1, 1, 0, 1, 1, 0, 0, 0, 1, 1, 1, 1};
+    int k = 3;
+    assertEquals(10, maxConsecutiveOnesIII.longestOnes(nums, k));
+  }
+
+  @Test
+  void testLongestOnes6() {
+    int[] nums = {0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0};
+    int k = 2;
+    assertEquals(6, maxConsecutiveOnesIII.longestOnes(nums, k));
+  }
 }
