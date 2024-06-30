@@ -8,7 +8,8 @@ public class LastStoneWeight {
   int lastStoneWeight(int[] stones) {
 
     // Create a priority queue
-    PriorityQueue<Integer> pq = new PriorityQueue<>(Collections.reverseOrder());
+    PriorityQueue<Integer> pq =
+        new PriorityQueue<>(Collections.reverseOrder());
 
     // Add all stones to the priority queue
     for (int stone : stones)
