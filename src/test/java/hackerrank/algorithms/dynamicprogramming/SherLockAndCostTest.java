@@ -1,34 +1,53 @@
 package hackerrank.algorithms.dynamicprogramming;
 
-import static org.junit.jupiter.api.Assertions.*;
-
+import java.util.ArrayList;
 import java.util.List;
 
 import org.junit.jupiter.api.Test;
+
+import static org.junit.jupiter.api.Assertions.*;
+
 public class SherLockAndCostTest {
 
-    @Test
-    public void testSherlockAndCostProblem_EmptyList() {
-        assertEquals(0, SherLockAndCost.sherlockAndCostProblem(List.of(1)));
-    }
+  private final SherLockAndCost sherLockAndCost;
 
-    @Test
-    public void testSherlockAndCostProblem_SingleElementList() {
-        assertEquals(0, SherLockAndCost.sherlockAndCostProblem(List.of(1)));
-    }
+  public SherLockAndCostTest() {
+    sherLockAndCost = new SherLockAndCost();
+  }
 
-    @Test
-    public void testSherlockAndCostProblem_PositiveNumbers() {
-        assertEquals(8, SherLockAndCost.sherlockAndCostProblem(List.of(1, 2, 3, 4, 5)));
-    }
+  @Test
+  void testSherlockAndCost1() {
+    List<Integer> B = new ArrayList<>();
+    B.add(10);
+    B.add(1);
+    B.add(10);
+    B.add(1);
+    B.add(10);
 
-    @Test
-    public void testSherlockAndCostProblem_NegativeNumbers() {
-        assertEquals(0, SherLockAndCost.sherlockAndCostProblem(List.of(-1, -2, -3, -4, -5)));
-    }
+    assertEquals(36, sherLockAndCost.sherlockAndCostProblem(B));
+  }
 
-    @Test
-    public void testSherlockAndCostProblem_MixedNumbers() {
-        assertEquals(8, SherLockAndCost.sherlockAndCostProblem(List.of(1, -2, 3, -4, 5)));
-    }
+  @Test
+  void testSherlockAndCost2() {
+    List<Integer> B = new ArrayList<>();
+    B.add(100);
+    B.add(2);
+    B.add(100);
+    B.add(2);
+    B.add(100);
+
+    assertEquals(396, sherLockAndCost.sherlockAndCostProblem(B));
+  }
+
+  @Test
+  void testSherlockAndCost3() {
+    List<Integer> B = new ArrayList<>();
+    B.add(1);
+    B.add(2);
+    B.add(3);
+    B.add(4);
+    B.add(5);
+
+    assertEquals(8, sherLockAndCost.sherlockAndCostProblem(B));
+  }
 }
