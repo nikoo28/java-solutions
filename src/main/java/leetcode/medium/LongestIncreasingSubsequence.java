@@ -21,6 +21,6 @@ public class LongestIncreasingSubsequence {
       if (T[i] > T[maxIndex])
         maxIndex = i;
 
-    return T[maxIndex] + 1;
+    return T[maxIndex];
   }
 }
