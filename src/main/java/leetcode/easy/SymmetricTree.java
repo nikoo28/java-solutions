@@ -11,22 +11,37 @@ import java.util.Queue;
 
 class SymmetricTree {
 
+  // iterative method to determine if a binary tree is symmetric
+  // using 2 queues
   boolean isSymmetric(TreeNode root) {
-    Queue<TreeNode> q = new LinkedList<>();
-    q.add(root);
-    q.add(root);
-    while (!q.isEmpty()) {
-      TreeNode t1 = q.poll();
-      TreeNode t2 = q.poll();
-      if (t1 == null && t2 == null) continue;
-      if (t1 == null || t2 == null) return false;
-      if (t1.val != t2.val) return false;
-      q.add(t1.left);
-      q.add(t2.right);
-      q.add(t1.right);
-      q.add(t2.left);
-    }
-    return true;
+
+      if (root == null) return true;
+
+      Queue<TreeNode> leftTree = new LinkedList<>();
+      Queue<TreeNode> rightTree = new LinkedList<>();
+
+      leftTree.add(root.left);
+      rightTree.add(root.right);
+
+      while (!leftTree.isEmpty() && !rightTree.isEmpty()) {
+
+        TreeNode leftNode = leftTree.poll();
+        TreeNode rightNode = rightTree.poll();
+
+        if (leftNode == null && rightNode == null) continue;
+
+        if (leftNode == null || rightNode == null) return false;
+
+        if (leftNode.val != rightNode.val) return false;
+
+        // Pushing order is very important
+        leftTree.add(leftNode.left);
+        leftTree.add(leftNode.right);
+        rightTree.add(rightNode.right);
+        rightTree.add(rightNode.left);
+      }
+
+      return true;
   }
 
 }

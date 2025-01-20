@@ -11,10 +11,20 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class SymmetricTreeTest {
 
-  private SymmetricTree symmetricTree = new SymmetricTree();
+  private final SymmetricTree symmetricTree;
+
+  SymmetricTreeTest() {
+    symmetricTree = new SymmetricTree();
+  }
 
   @Test
   void testIsSymmetric1() {
+    // Creating a tree like
+    //             1
+    //          /     \
+    //        2         2
+    //      /   \     /  \
+    //     3    4    4    3
     TreeNode root = new TreeNode(1);
     root.left = new TreeNode(2);
     root.right = new TreeNode(2);
@@ -28,6 +38,12 @@ class SymmetricTreeTest {
 
   @Test
   void testIsSymmetric2() {
+    // Creating a tree like
+    //             1
+    //          /     \
+    //        2         2
+    //         \         \
+    //          3         3
     TreeNode root = new TreeNode(1);
     root.left = new TreeNode(2);
     root.right = new TreeNode(2);
