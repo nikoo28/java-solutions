@@ -6,7 +6,7 @@ public class LongestIncreasingSubsequence {
     
     int[] T = new int[nums.length];
 
-    // Start main pointer
+    // Start the main pointer
     for (int i = 1; i < nums.length; i++)
 
       // Start second pointer
