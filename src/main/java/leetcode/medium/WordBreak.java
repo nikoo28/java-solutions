@@ -4,7 +4,7 @@ import java.util.*;
 
 public class WordBreak {
 
-  boolean wordBreak(String s, java.util.List<String> wordDict) {
+  boolean wordBreak(String s, List<String> wordDict) {
 
     // Convert the dictionary to a set for O(1) lookups
     Set<String> wordSet = new HashSet<>(wordDict);
@@ -22,17 +22,14 @@ public class WordBreak {
     // Base case: empty string is valid
     dp[0] = true;
 
-    for (int i = 1; i <= n; i++) {
+    for (int i = 1; i <= n; i++)
 
       // Check prefixes of length up to maxLen
-      for (int j = i - 1; j >= Math.max(0, i - maxLen); j--) {
+      for (int j = i - 1; j >= Math.max(0, i - maxLen); j--)
         if (dp[j] && wordSet.contains(s.substring(j, i))) {
           dp[i] = true;
           break; // No need to check further prefixes
         }
-      }
-
-    }
 
     return dp[n];
   }
