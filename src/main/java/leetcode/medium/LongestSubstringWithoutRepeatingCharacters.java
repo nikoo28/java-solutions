@@ -1,7 +1,7 @@
 package leetcode.medium;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.HashSet;
+import java.util.Set;
 
 /**
  * Created by nikoo28 on 12/18/17 9:29 PM
@@ -11,27 +11,23 @@ class LongestSubstringWithoutRepeatingCharacters {
 
   int lengthOfLongestSubstring(String s) {
 
-    if (s == null || s.length() == 0)
-      return 0;
+    Set<Character> charSet = new HashSet<>();
 
-    int maxLen = 1;
+    int maxLength = 0;
+    int left = 0;
 
-    List<Character> x = new ArrayList<>();
-    for (int i = 0; i < s.length(); i++) {
+    for (int right = 0; right < s.length(); right++) {
 
-      if (x.contains(s.charAt(i))) {
-
-        maxLen = Math.max(maxLen, x.size());
-
-        while (x.get(0) != s.charAt(i))
-          x.remove(0);
-        x.remove(0);
+      while (charSet.contains(s.charAt(right))) {
+        charSet.remove(s.charAt(left));
+        left++;
       }
 
-      x.add(s.charAt(i));
+      charSet.add(s.charAt(right));
+      maxLength = Math.max(maxLength, right - left + 1);
     }
 
-    return Math.max(maxLen, x.size());
+    return maxLength;
   }
 
 }
