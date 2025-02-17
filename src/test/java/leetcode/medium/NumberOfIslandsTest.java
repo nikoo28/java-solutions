@@ -21,6 +21,14 @@ class NumberOfIslandsTest {
         {'0', '0', '0', '1', '1'}
     };
     assertEquals(3, numberOfIslands.numIslands(grid));
+
+    grid = new char[][]{
+        {'1', '1', '0', '0', '0'},
+        {'1', '1', '0', '0', '0'},
+        {'0', '0', '1', '0', '0'},
+        {'0', '0', '0', '1', '1'}
+    };
+    assertEquals(3, numberOfIslands.numIslandsBFS(grid));
   }
 
   @Test
@@ -32,6 +40,14 @@ class NumberOfIslandsTest {
         {'0', '0', '0', '0', '0'}
     };
     assertEquals(1, numberOfIslands.numIslands(grid));
+
+    grid = new char[][]{
+        {'1', '1', '1', '1', '0'},
+        {'1', '1', '0', '1', '0'},
+        {'1', '1', '0', '0', '0'},
+        {'0', '0', '0', '0', '0'}
+    };
+    assertEquals(1, numberOfIslands.numIslandsBFS(grid));
   }
 
   @Test
@@ -40,6 +56,11 @@ class NumberOfIslandsTest {
         {'1'}
     };
     assertEquals(1, numberOfIslands.numIslands(grid));
+
+    grid = new char[][]{
+        {'1'}
+    };
+    assertEquals(1, numberOfIslands.numIslandsBFS(grid));
   }
 
   @Test
@@ -50,6 +71,13 @@ class NumberOfIslandsTest {
         {'0', '0', '0'}
     };
     assertEquals(0, numberOfIslands.numIslands(grid));
+
+    grid = new char[][]{
+        {'0', '0', '0'},
+        {'0', '0', '0'},
+        {'0', '0', '0'}
+    };
+    assertEquals(0, numberOfIslands.numIslandsBFS(grid));
   }
 
   @Test
@@ -60,5 +88,12 @@ class NumberOfIslandsTest {
         {'1', '0', '1', '0'}
     };
     assertEquals(6, numberOfIslands.numIslands(grid));
+
+    grid = new char[][]{
+        {'1', '0', '1', '0'},
+        {'0', '1', '0', '1'},
+        {'1', '0', '1', '0'}
+    };
+    assertEquals(6, numberOfIslands.numIslandsBFS(grid));
   }
 }
