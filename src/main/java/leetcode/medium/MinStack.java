@@ -15,21 +15,19 @@ public class MinStack {
   public void push(int val) {
     stack.push(val);
 
-    // If the minStack is empty or the new value is less than or equal to
+    // If minStack is empty or new value is less than equal to
     // the top of the minStack, push it onto the minStack
-    if (minStack.isEmpty() || val <= minStack.peek()) {
+    if (minStack.isEmpty() || val <= minStack.peek())
       minStack.push(val);
-    }
   }
 
   public void pop() {
     int poppedValue = stack.pop();
 
-    // If the popped value is equal to the top of the minStack,
+    // If popped value == top of the minStack,
     // pop it from the minStack as well
-    if (poppedValue == minStack.peek()) {
+    if (poppedValue == minStack.peek())
       minStack.pop();
-    }
   }
 
   public int top() {
