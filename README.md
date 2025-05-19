@@ -11,18 +11,6 @@ You can also [subscribe via email](http://eepurl.com/g9Dadv).
   * [Setup Project](#setup-project)
 - [CONTRIBUTE](#contribute)
 - [Solutions for some coding platforms](#solutions-for-some-coding-platforms)
-- [Full list of questions](#full-list-of-questions)
-- [Code Explanations](#code-explanations)
-  * [String](#string)
-  * [Array](#array)
-  * [Linked Lists](#linked-lists)
-  * [Trees](#trees)
-- [Theory](#theory)
-    + [Algorithmic Paradigms](#algorithmic-paradigms)
-    + [Analysis of Algorithms](#analysis-of-algorithms)
-    + [Sorting Techniques](#sorting-techniques)
-    + [Searching Techniques](#searching-techniques)
-    + [Data Structures](#data-structures)
 - [Playlists](#playlists)
 
 # How to use this repo
