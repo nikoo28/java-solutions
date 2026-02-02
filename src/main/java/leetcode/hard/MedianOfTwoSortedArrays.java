@@ -12,30 +12,27 @@ class MedianOfTwoSortedArrays {
     int[] larger = nums1.length > nums2.length ? nums1 : nums2;
     int totalLength = nums1.length + nums2.length;
 
-    int low = 0;
-    int high = smaller.length;
+    int low = 0, high = smaller.length;
 
     while (low <= high) {
       int partitionX = (low + high) / 2;
       int partitionY = (totalLength + 1) / 2 - partitionX;
 
-      int leftXMax = partitionX == 0 ? Integer.MIN_VALUE : smaller[partitionX - 1];
-      int rightXMin = partitionX == smaller.length ? Integer.MAX_VALUE : smaller[partitionX];
+      int l1 = partitionX == 0 ? Integer.MIN_VALUE : smaller[partitionX - 1];
+      int r1 = partitionX == smaller.length ? Integer.MAX_VALUE : smaller[partitionX];
 
-      int leftYMax = partitionY == 0 ? Integer.MIN_VALUE : larger[partitionY - 1];
-      int rightYMin = partitionY == larger.length ? Integer.MAX_VALUE : larger[partitionY];
+      int l2 = partitionY == 0 ? Integer.MIN_VALUE : larger[partitionY - 1];
+      int r2 = partitionY == larger.length ? Integer.MAX_VALUE : larger[partitionY];
 
-      if (leftXMax <= rightYMin && leftYMax <= rightXMin) {
-        if ((totalLength) % 2 == 0) {
-          return (Math.max(leftXMax, leftYMax) + Math.min(rightXMin, rightYMin)) / 2.0;
-        } else
-          return Math.max(leftXMax, leftYMax);
-      }
+      if (l1 <= r2 && l2 <= r1)
+        // means this is a valid partition
+        if ((totalLength) % 2 == 0)
+          return (Math.max(l1, l2) + Math.min(r1, r2)) / 2.0;
+        else
+          return Math.max(l1, l2);
 
-      if (leftXMax > rightYMin) {
-        high = partitionX - 1;
-      } else
-        low = partitionX + 1;
+      if (l1 > r2) high = partitionX - 1;
+      else low = partitionX + 1;
     }
 
     return 0;

@@ -32,4 +32,8 @@ class MedianOfTwoSortedArraysTest {
     int[] nums2 = {7};
     assertEquals(4.0, medianOfTwoSortedArrays.findMedianSortedArrays(nums1, nums2));
   }
+
+  @Test
+  void findMedianSortedArrays() {
+  }
 }
