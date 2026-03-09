@@ -8,53 +8,46 @@ import util.ListNode;
 
 class MergeKSortedLists {
 
-  public ListNode mergeKLists(ListNode[] lists) {
-
-    ListNode mergedLists = lists[0];
-
-    for (int i = 1; i < lists.length; i++) {
-
-      mergedLists = mergeTwoLists(mergedLists, lists[i]);
+  ListNode mergeKLists(ListNode[] lists) {
+    if (lists == null || lists.length == 0) {
+      return null;
     }
-
-    return mergedLists;
+    return mergeKListsHelper(lists, 0, lists.length - 1);
   }
 
-  private ListNode mergeTwoLists(ListNode l1, ListNode l2) {
-
-    if (l1 == null)
-      return l2;
-
-    if (l2 == null)
-      return l1;
-
-    ListNode pointer = null;
-    ListNode answer = null;
-
-    if(l1.val < l2.val) {
-      answer = new ListNode(l1.val);
-      l1 = l1.next;
-    } else {
-      answer = new ListNode(l2.val);
-      l2 = l2.next;
+  private ListNode mergeKListsHelper(ListNode[] lists, int start, int end) {
+    if (start == end) {
+      return lists[start];
     }
-    pointer = answer;
+
+    if (start + 1 == end) {
+      return merge2Lists(lists[start], lists[end]);
+    }
+
+    int mid = start + (end - start) / 2;
+    ListNode left = mergeKListsHelper(lists, start, mid);
+    ListNode right = mergeKListsHelper(lists, mid + 1, end);
+    return merge2Lists(left, right);
+  }
+
+  private ListNode merge2Lists(ListNode l1, ListNode l2) {
+    ListNode dummy = new ListNode(0);
+    ListNode curr = dummy;
 
     while (l1 != null && l2 != null) {
-
       if (l1.val < l2.val) {
-        pointer.next = new ListNode(l1.val);
+        curr.next = l1;
         l1 = l1.next;
       } else {
-        pointer.next = new ListNode(l2.val);
+        curr.next = l2;
         l2 = l2.next;
       }
-      pointer = pointer.next;
+      curr = curr.next;
     }
 
-    pointer.next = l1 == null ? l2 : l1;
+    curr.next = (l1 != null) ? l1 : l2;
 
-    return answer;
+    return dummy.next;
   }
 
 }

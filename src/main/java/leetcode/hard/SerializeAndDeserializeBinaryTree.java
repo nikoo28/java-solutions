@@ -1,6 +1,7 @@
 package leetcode.hard;
 
 import util.TreeNode;
+
 import java.util.*;
 
 public class SerializeAndDeserializeBinaryTree {
